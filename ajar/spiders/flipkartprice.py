@@ -16,14 +16,14 @@ import requests
 import pymongo
 import urllib
 from pandas import json_normalize
-CHROMEDRIVER_PATH = r"C:\Users\G RAJA\Desktop\scrapy_mongo\scraper\chromedriver.exe"
+# CHROMEDRIVER_PATH = r"C:\Users\G RAJA\Desktop\scrapy_mongo\scraper\chromedriver.exe"
 # chrome requirments
-# GOOGLE_CHROME_PATH = "/app/.apt/usr/bin/google-chrome"
-# CHROMEDRIVER_PATH = "/app/.chromedriver/bin/chromedriver"
+GOOGLE_CHROME_PATH = "/app/.apt/usr/bin/google-chrome"
+CHROMEDRIVER_PATH = "/app/.chromedriver/bin/chromedriver"
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument("--headless")
 chrome_options.add_argument("--no-sandbox")
-# chrome_options.binary_location = GOOGLE_CHROME_PATH
+chrome_options.binary_location = GOOGLE_CHROME_PATH
 
 
 class QuotesInfiniteScrollSpider(scrapy.Spider):
@@ -65,5 +65,5 @@ class QuotesInfiniteScrollSpider(scrapy.Spider):
         price_2 = scrapy_selector.css("#container > div > div._2c7YLP.UtUXW0._6t1WkM._3HqJxg > div._1YokD2._2GoDe3 > div._1YokD2._3Mn1Gg.col-8-12 > div:nth-child(2) > div > div.dyC4hf > div.CEmiEU > div > div._3Ay6Sb._31Dcoz > span::text").getall() or scrapy_selector.css("div._3Ay6Sb._31Dcoz > span::text").getall()
         yield PriceExtractor(pid=pid,price_mrp=price_mrp,price=price,price_2=price_2)
         browser.close()
-        browser.quit()
+        # browser.quit()
    
