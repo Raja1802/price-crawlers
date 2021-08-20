@@ -37,7 +37,8 @@ options.add_argument("--headless")
 options.add_argument("--disable-gpu")
 options.add_argument("--no-sandbox")
 # options.add_argument("--window-size=1920,1080")
-binary = FirefoxBinary(os.environ.get('FIREFOX_BIN'))
+# binary = FirefoxBinary(os.environ.get('FIREFOX_BIN'))
+binary = FirefoxBinary("/app/vendor/firefox/firefox")
 
 
 

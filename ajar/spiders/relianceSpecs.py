@@ -38,7 +38,8 @@ options.add_argument("--headless")
 options.add_argument("--disable-gpu")
 options.add_argument("--no-sandbox")
 # options.add_argument("--window-size=1920,1080")
-binary = FirefoxBinary(os.environ.get('FIREFOX_BIN'))
+# binary = FirefoxBinary(os.environ.get('FIREFOX_BIN'))
+binary = FirefoxBinary("/app/vendor/firefox/firefox")
 
 
 
@@ -71,8 +72,8 @@ class QuotesInfiniteScrollSpider(scrapy.Spider):
     # parsing results with below function
     def parse(self, response):
        
-        browser = webdriver.Firefox(firefox_options=options,firefox_binary=binary,executable_path=os.environ.get('GECKODRIVER_PATH'))
-
+        # browser = webdriver.Firefox(firefox_options=options,firefox_binary=binary,executable_path=os.environ.get('GECKODRIVER_PATH'))
+        browser = webdriver.PhantomJS()
         browser.get(response.url)
         # sleep(0.5)
         scrapy_selector = Selector(text=browser.page_source)
