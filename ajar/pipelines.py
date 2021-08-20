@@ -44,7 +44,7 @@ class AjarPipeline:
             else:
                 print("price Exist")
             return item
-        client.close()
+        # client.close()
         
         # collect.insert(dict(item))
         # self.collection.insert(dict(item))
