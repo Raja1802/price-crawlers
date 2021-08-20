@@ -77,7 +77,7 @@ class QuotesInfiniteScrollSpider(scrapy.Spider):
         )
         browser.get(response.url)
         # sleep(0.5)
-        sleep(1)
+        # sleep(1)
         scrapy_selector = Selector(text=browser.page_source)
         # css selection of html data tags
         pid = response.url

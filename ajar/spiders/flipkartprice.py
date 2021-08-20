@@ -64,6 +64,6 @@ class QuotesInfiniteScrollSpider(scrapy.Spider):
         price = scrapy_selector.css("#container > div > div._2c7YLP.UtUXW0._6t1WkM._3HqJxg > div._1YokD2._2GoDe3 > div._1YokD2._3Mn1Gg.col-8-12 > div:nth-child(2) > div > div.dyC4hf > div.CEmiEU > div > div._30jeq3._16Jk6d::text").getall() or scrapy_selector.css("div._30jeq3._16Jk6d::text").getall()
         price_2 = scrapy_selector.css("#container > div > div._2c7YLP.UtUXW0._6t1WkM._3HqJxg > div._1YokD2._2GoDe3 > div._1YokD2._3Mn1Gg.col-8-12 > div:nth-child(2) > div > div.dyC4hf > div.CEmiEU > div > div._3Ay6Sb._31Dcoz > span::text").getall() or scrapy_selector.css("div._3Ay6Sb._31Dcoz > span::text").getall()
         yield PriceExtractor(pid=pid,price_mrp=price_mrp,price=price,price_2=price_2)
-        browser.close()
+        # browser.close()
         # browser.quit()
    
