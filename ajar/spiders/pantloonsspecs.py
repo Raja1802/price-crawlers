@@ -78,6 +78,7 @@ class QuotesInfiniteScrollSpider(scrapy.Spider):
         # amazon = AmazonUs()
         # ImageExtractor = ImageExtractor()
         # SpecsExtractor = SpecsExtractor()
+        sleep(1)
         # browser = webdriver.Firefox(firefox_options=options,firefox_binary=binary,executable_path=os.environ.get('GECKODRIVER_PATH'))
         browser = webdriver.PhantomJS()
         browser.get(response.url)
