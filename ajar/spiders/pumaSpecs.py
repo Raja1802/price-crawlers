@@ -1,5 +1,5 @@
 import scrapy
-from ajar.items import AmazonUs,SpecsExtractor,ImageExtractor,SpecImage
+from ajar.items import AmazonUs,SpecsExtractor,ImageExtractor,SpecImage,PriceExtractor
 from scrapy.spiders import CrawlSpider, Rule
 from selenium import webdriver
 from time import sleep
@@ -93,6 +93,12 @@ class QuotesInfiniteScrollSpider(scrapy.Spider):
             specKey = "Detail"
             specValue = i.css("div.single-story-block > ul > li::text").get()
             yield SpecsExtractor(pid=pid,specKey=specKey,specValue=specValue)
+            # price below
+        pid = response.url
+        price_mrp = scrapy_selector.css("body > div.page > div.product-detail-root > div.product-page-layout > div.product-details-section > div.product-details-col.col-lg-4 > div > div.row.margin-bottom-60 > div.col-md-5 > div > div > div:nth-child(1) > div > span.strike-through.list > span::text").get() or scrapy_selector.css("span.strike-through > span::text").get()
+        price = scrapy_selector.css("body > div.page > div.product-detail-root > div.product-page-layout > div.product-details-section > div.product-details-col.col-lg-4 > div > div.row.margin-bottom-60 > div.col-md-5 > div > div > div:nth-child(1) > div > span.sales > span::text").get() or scrapy_selector.css("span.sales > span::text").get() 
+        price_2 = "null" 
+        yield PriceExtractor(pid=pid,price_mrp=price_mrp,price=price,price_2=price_2)
             # return SpecsExtractor
         # for j in scrapy_selector.css("div._20Gt85"):
         #     ImageExtractor["image"] = j.css["div.q6DClP"].get()
