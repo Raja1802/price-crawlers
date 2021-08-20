@@ -21,13 +21,14 @@ class AjarPipeline:
         # )
         # client = pymongo.MongoClient("mongodb+srv://ajar:"+ urllib.parse.quote_plus("Raja@1802")+ "@cluster0.rqssk.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
         # mongodb+srv://ajar:<password>
-        print(item)
+        print(self)
         client = pymongo.MongoClient("mongodb://ajar:" + urllib.parse.quote_plus("Raja@1802") + "@cluster0-shard-00-00.eyv0d.mongodb.net:27017,cluster0-shard-00-01.eyv0d.mongodb.net:27017,cluster0-shard-00-02.eyv0d.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-110jin-shard-0&authSource=admin&retryWrites=true&w=majority")
         db = client.puma
         collect = db.puma_specs
+        collect_price = db.puma_price
         # collect.insert(dict(item))#
         # {'pid':item['pid'],"specKey": item["specKey"]}specValue
-
+        
         dup_check = collect.find({'pid':item['pid'],"specValue": item["specValue"]}).count()
         if dup_check == 0 :     
             collect.insert(dict(item))
