@@ -6,6 +6,9 @@ from time import sleep
 from scrapy.selector import Selector
 import json
 import os
+
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 from scrapy.linkextractors import LinkExtractor as sle
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
@@ -24,6 +27,19 @@ chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument("--headless")
 chrome_options.add_argument("--no-sandbox")
 chrome_options.binary_location = GOOGLE_CHROME_PATH
+options = webdriver.FirefoxOptions()
+	
+	# enable trace level for debugging 
+# options.log.level = "trace"
+# fp = webdriver.FirefoxProfile()
+# options.add_argument("--remote-debugging-port=9224")
+options.add_argument("--headless")
+options.add_argument("--disable-gpu")
+options.add_argument("--no-sandbox")
+# options.add_argument("--window-size=1920,1080")
+binary = FirefoxBinary(os.environ.get('FIREFOX_BIN'))
+
+
 
 
 class QuotesInfiniteScrollSpider(scrapy.Spider):
@@ -63,10 +79,11 @@ class QuotesInfiniteScrollSpider(scrapy.Spider):
         # amazon = AmazonUs()
         # ImageExtractor = ImageExtractor()
         # SpecsExtractor = SpecsExtractor()
-        browser = webdriver.Chrome(
-            executable_path=os.environ.get("CHROMEDRIVER_PATH"),
-            chrome_options=chrome_options,
-        )
+        # browser = webdriver.Chrome(
+        #     executable_path=os.environ.get("CHROMEDRIVER_PATH"),
+        #     chrome_options=chrome_options,
+        # )
+        browser = webdriver.Firefox(firefox_options=options,firefox_binary=binary,executable_path=os.environ.get('GECKODRIVER_PATH'))
         browser.get(response.url)
         # sleep(0.5)
         scrapy_selector = Selector(text=browser.page_source)
