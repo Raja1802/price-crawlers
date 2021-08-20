@@ -63,5 +63,5 @@ class QuotesInfiniteScrollSpider(scrapy.Spider):
         price_2 = scrapy_selector.css("#root > main > main > div.pb__20 > section.pdpStickyContainer > div.blk__sm__7.pdp__topBlock > div:nth-child(5) > div:nth-child(2) > div.pdp__priceSection > ul > li.pdp__priceSection__priceListText.pdp__savePrice::text").getall() or scrapy_selector.css("li.pdp__savePrice::text").getall()
         yield PriceExtractor(pid=pid,price_mrp=price_mrp,price=price,price_2=price_2)
 
-        browser.close()
-        # browser.quit()
+        # browser.close()
+        browser.quit()
