@@ -63,7 +63,7 @@ class QuotesInfiniteScrollSpider(scrapy.Spider):
         for index, row in df.iterrows():
             sleep(1)
             print(index)
-            yield scrapy.Request(url=row["product_id"], callback=self.parse)
+            yield scrapy.Request(row["product_id"], self.parse)
        
     # rules = (Rule(sle(allow=( "shirt", "shoes","mobile","cycle","women","men","/p/"), deny=("product-reviews")), callback="parse_result", follow=True),)
     # parsing results with below function

@@ -54,7 +54,7 @@ class QuotesInfiniteScrollSpider(scrapy.Spider):
         for index, row in df.iterrows():
             sleep(2)
             print(index)
-            yield scrapy.Request(url=row["product_id"], callback=self.parse)
+            yield scrapy.Request(row["product_id"], self.parse)
          
     def parse(self, response):
         browser = webdriver.Firefox(firefox_options=options,firefox_binary=binary,executable_path=os.environ.get('GECKODRIVER_PATH'))
