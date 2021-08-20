@@ -73,8 +73,7 @@ class QuotesInfiniteScrollSpider(scrapy.Spider):
     def parse(self, response):
        
         # browser = webdriver.Firefox(firefox_options=options,firefox_binary=binary,executable_path=os.environ.get('GECKODRIVER_PATH'))
-        # browser = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"),chrome_options=chrome_options)
-        browser = webdriver.PhantomJS()
+        browser = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"),chrome_options=chrome_options)
         browser.get(response.url)
         # sleep(0.5)
         scrapy_selector = Selector(text=browser.page_source)

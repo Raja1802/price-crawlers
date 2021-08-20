@@ -68,8 +68,8 @@ class QuotesInfiniteScrollSpider(scrapy.Spider):
         # ImageExtractor = ImageExtractor()
         # SpecsExtractor = SpecsExtractor()
         userAgent = ua.random
-        chrome_options.add_argument(f'user-agent={userAgent}')
-        chrome_options.add_argument('--proxy-server=%s' % PROXY)
+        # chrome_options.add_argument(f'user-agent={userAgent}')
+        # chrome_options.add_argument('--proxy-server=%s' % PROXY)
         browser = webdriver.Chrome(
             executable_path=os.environ.get("CHROMEDRIVER_PATH"),
             # executable_path=CHROMEDRIVER_PATH,
