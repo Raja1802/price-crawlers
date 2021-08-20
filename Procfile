@@ -5,3 +5,4 @@ worker03: scrapy crawl nykaa_specs_data
 worker04: scrapy crawl pantloons_specs_data
 worker05: scrapy crawl puma_specs_data
 worker06: scrapy crawl paytmmall_specs_data
+worker07: scrapy crawl reliance_specs_data
