@@ -51,10 +51,11 @@ class QuotesInfiniteScrollSpider(scrapy.Spider):
             print(index)
             yield scrapy.Request(url=row["product_id"], callback=self.parse)
     def parse(self, response):
-        browser = webdriver.Chrome(
-            executable_path=os.environ.get("CHROMEDRIVER_PATH"),
-            chrome_options=chrome_options,
-        )
+        # browser = webdriver.Chrome(
+        #     executable_path=os.environ.get("CHROMEDRIVER_PATH"),
+        #     chrome_options=chrome_options,
+        # )
+        browser = webdriver.PhantomJS()
         browser.get(response.url)
         
         scrapy_selector = Selector(text=browser.page_source)
