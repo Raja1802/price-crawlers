@@ -78,13 +78,3 @@ class QuotesInfiniteScrollSpider(scrapy.Spider):
         price_2 = scrapy_selector.css("span.percentage_off::text").getall()
         yield PriceExtractor(pid=pid,price_mrp=price_mrp,price=price,price_2=price_2)
         
-            # return SpecsExtractor
-        # for j in scrapy_selector.css("div._20Gt85"):
-        #     ImageExtractor["image"] = j.css["div.q6DClP"].get()
-        # yield SpecImage(images=ImageExtractor, specs=SpecsExtractor)
-        # browser.close()
-        # return amazon
-
-
-# git push change usage comments
-# push 1
