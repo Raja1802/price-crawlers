@@ -97,8 +97,8 @@ class QuotesInfiniteScrollSpider(scrapy.Spider):
         # for j in scrapy_selector.css("div._20Gt85"):
         #     ImageExtractor["image"] = j.css["div.q6DClP"].get()
         # yield SpecImage(images=ImageExtractor, specs=SpecsExtractor)
-        # browser.close()
-        browser.quit()
+        browser.close()
+        # browser.quit()
         # return amazon
 
 
