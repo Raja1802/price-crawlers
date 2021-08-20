@@ -28,14 +28,22 @@ class AjarPipeline:
         collect_price = db.puma_price
         # collect.insert(dict(item))#
         # {'pid':item['pid'],"specKey": item["specKey"]}specValue
-        
-        dup_check = collect.find({'pid':item['pid'],"specValue": item["specValue"]}).count()
-        if dup_check == 0 :     
-            collect.insert(dict(item))
-            print ("product Added!")
-        else:
-           print("product Exist")
-        return item
+        if "specValue" in item:
+            dup_check = collect.find({'pid':item['pid'],"specValue": item["specValue"]}).count()
+            if dup_check == 0 :     
+                collect.insert(dict(item))
+                print ("product Added!")
+            else:
+                print("product Exist")
+            return item
+        elif "price" in item:
+            dup_check = collect_price.find({'pid':item['pid']}).count()
+            if dup_check == 0 :     
+                collect_price.insert(dict(item))
+                print ("price Added!")
+            else:
+                print("price Exist")
+            return item
         
         # collect.insert(dict(item))
         # self.collection.insert(dict(item))
