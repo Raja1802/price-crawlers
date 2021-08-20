@@ -75,7 +75,6 @@ class QuotesInfiniteScrollSpider(scrapy.Spider):
             pid = response.url
             specKey = i.css("div.w3LC::text").get() 
             specValue = i.css("div._2LOI::text").get() 
-            yield SpecsExtractor(pid=pid,specKey=specKey,specValue=specValue)
-           
+            yield SpecsExtractor(pid=pid,specKey=specKey,specValue=specValue) 
         browser.close()
         
