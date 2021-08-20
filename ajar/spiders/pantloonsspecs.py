@@ -53,7 +53,7 @@ class QuotesInfiniteScrollSpider(scrapy.Spider):
     start_urls = []
     for index, row in df.iterrows():
         # sleep(2)
-        print(index)
+        # print(index)
         start_urls.append(row["product_id"])
     # start_urls = []
     # def start_requests(self):
@@ -78,7 +78,8 @@ class QuotesInfiniteScrollSpider(scrapy.Spider):
         # amazon = AmazonUs()
         # ImageExtractor = ImageExtractor()
         # SpecsExtractor = SpecsExtractor()
-        browser = webdriver.Firefox(firefox_options=options,firefox_binary=binary,executable_path=os.environ.get('GECKODRIVER_PATH'))
+        # browser = webdriver.Firefox(firefox_options=options,firefox_binary=binary,executable_path=os.environ.get('GECKODRIVER_PATH'))
+        browser = webdriver.PhantomJS()
         browser.get(response.url)
         # sleep(0.5)
         scrapy_selector = Selector(text=browser.page_source)
