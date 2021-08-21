@@ -18,12 +18,13 @@ import urllib
 from pandas import json_normalize
 # CHROMEDRIVER_PATH = r"C:\Users\G RAJA\Desktop\scrapy_mongo\scraper\chromedriver.exe"
 # chrome requirments
-GOOGLE_CHROME_PATH = "/app/.apt/usr/bin/google-chrome"
-CHROMEDRIVER_PATH = "/app/.chromedriver/bin/chromedriver"
+# GOOGLE_CHROME_PATH = "/app/.apt/usr/bin/google-chrome"
+# CHROMEDRIVER_PATH = "/app/.chromedriver/bin/chromedriver"
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument("--headless")
 chrome_options.add_argument("--no-sandbox")
-chrome_options.binary_location = GOOGLE_CHROME_PATH
+# chrome_options.binary_location = GOOGLE_CHROME_PATH
+from webdriver_manager.chrome import ChromeDriverManager
 
 
 class QuotesInfiniteScrollSpider(scrapy.Spider):
@@ -55,7 +56,11 @@ class QuotesInfiniteScrollSpider(scrapy.Spider):
         #     executable_path=os.environ.get("CHROMEDRIVER_PATH"),
         #     chrome_options=chrome_options,
         # )
-        browser = webdriver.PhantomJS()
+        # browser = webdriver.PhantomJS()
+        browser = webdriver.Chrome(
+            executable_path=ChromeDriverManager().install(),
+            chrome_options=chrome_options,
+        )
         browser.get(response.url)
         
         scrapy_selector = Selector(text=browser.page_source)
