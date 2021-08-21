@@ -54,7 +54,7 @@ class QuotesInfiniteScrollSpider(scrapy.Spider):
         # )
         browser = webdriver.PhantomJS()
         browser.get(response.url)
-        # sleep(0.5)
+        sleep(3)
         scrapy_selector = Selector(text=browser.page_source)
         # css selection of html data tags
         
