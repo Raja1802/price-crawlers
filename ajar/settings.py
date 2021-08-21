@@ -15,7 +15,7 @@ BOT_NAME = "ajar"
 
 SPIDER_MODULES = ["ajar.spiders"]
 NEWSPIDER_MODULE = "ajar.spiders"
-
+#
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 # USER_AGENT = 'ajar (+http://www.yourdomain.com)'
