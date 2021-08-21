@@ -16,6 +16,7 @@ import requests
 import pymongo
 import urllib
 from pandas import json_normalize
+from webdriver_manager.chrome import ChromeDriverManager
 # CHROMEDRIVER_PATH = r"C:\Users\G RAJA\Desktop\scrapy_mongo\scraper\chromedriver.exe"
 # chrome requirments
 GOOGLE_CHROME_PATH = "/app/.apt/usr/bin/google-chrome"
@@ -48,11 +49,11 @@ class QuotesInfiniteScrollSpider(scrapy.Spider):
             yield scrapy.Request(url=url, callback=self.parse)
     def parse(self, response):
 
-        # browser = webdriver.Chrome(
-        #     executable_path=os.environ.get("CHROMEDRIVER_PATH"),
-        #     chrome_options=chrome_options,
-        # )
-        browser = webdriver.PhantomJS()
+        browser = webdriver.Chrome(
+            executable_path=ChromeDriverManager().install(),
+            chrome_options=chrome_options,
+        )
+        # browser = webdriver.PhantomJS()
         browser.get(response.url)
         sleep(3)
         scrapy_selector = Selector(text=browser.page_source)
