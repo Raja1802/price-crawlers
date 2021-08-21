@@ -70,11 +70,12 @@ class QuotesInfiniteScrollSpider(scrapy.Spider):
         userAgent = ua.random
         # chrome_options.add_argument(f'user-agent={userAgent}')
         # chrome_options.add_argument('--proxy-server=%s' % PROXY)
-        browser = webdriver.Chrome(
-            executable_path=os.environ.get("CHROMEDRIVER_PATH"),
-            # executable_path=CHROMEDRIVER_PATH,
-            chrome_options=chrome_options,
-        )
+        # browser = webdriver.Chrome(
+        #     executable_path=os.environ.get("CHROMEDRIVER_PATH"),
+        #     # executable_path=CHROMEDRIVER_PATH,
+        #     chrome_options=chrome_options,
+        # )
+        browser = webdriver.PhantomJS()
         browser.get(response.url)
         # sleep(0.5)
         # sleep(1)
