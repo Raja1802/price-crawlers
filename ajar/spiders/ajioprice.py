@@ -82,9 +82,9 @@ class QuotesInfiniteScrollSpider(scrapy.Spider):
         scrapy_selector = Selector(text=browser.page_source)
         # css selection of html data tags
         pid = response.url
-        price_mrp =  scrapy_selector.css("span.prod-cp::text").getall()
-        price = scrapy_selector.css("div.prod-sp::text").getall()
-        price_2 =  scrapy_selector.css("span.prod-discnt::text").getall()
+        price_mrp =  scrapy_selector.css("div.prod-price-section > div.prod-price-sec > span.prod-cp::text").getall()
+        price = scrapy_selector.css("div.prod-price-section > div.prod-sp::text").getall()
+        price_2 =  scrapy_selector.css("div.prod-price-section > div.prod-price-sec > span.prod-discnt::text").getall()
         yield PriceExtractor(pid=pid,price_mrp=price_mrp,price=price,price_2=price_2)
             # return SpecsExtractor
         # for j in scrapy_selector.css("div._20Gt85"):
