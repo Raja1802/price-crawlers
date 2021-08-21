@@ -63,5 +63,6 @@ pandas==1.2.3
 scrapyd-client==1.1.0
 scrapyd==1.2.1
 scrapyd-heroku==0.2.1
-git+https://github.com/dmclain/scrapy-heroku --user
+distribute==0.6.49
+git+https://github.com/dmclain/scrapy-heroku 
 git+https://github.com/scrapinghub/scrapyrt.git
