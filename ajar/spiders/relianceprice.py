@@ -48,14 +48,13 @@ class QuotesInfiniteScrollSpider(scrapy.Spider):
         for url in urls:
             yield scrapy.Request(url=url, callback=self.parse)
     def parse(self, response):
-
         browser = webdriver.Chrome(
             executable_path=ChromeDriverManager().install(),
             chrome_options=chrome_options,
         )
         # browser = webdriver.PhantomJS()
         browser.get(response.url)
-        sleep(3)
+        # sleep(3)
         scrapy_selector = Selector(text=browser.page_source)
         # css selection of html data tags
         
