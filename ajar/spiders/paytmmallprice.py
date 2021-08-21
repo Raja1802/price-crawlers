@@ -62,10 +62,11 @@ class QuotesInfiniteScrollSpider(scrapy.Spider):
         # amazon = AmazonUs()
         # ImageExtractor = ImageExtractor()
         # SpecsExtractor = SpecsExtractor()
-        browser = webdriver.Chrome(
-            executable_path=os.environ.get("CHROMEDRIVER_PATH"),
-            chrome_options=chrome_options,
-        )
+        # browser = webdriver.Chrome(
+        #     executable_path=os.environ.get("CHROMEDRIVER_PATH"),
+        #     chrome_options=chrome_options,
+        # )
+        browser = webdriver.PhantomJS()
         browser.get(response.url)
         # sleep(0.5)
         scrapy_selector = Selector(text=browser.page_source)
