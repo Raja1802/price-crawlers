@@ -1,0 +1,109 @@
+2021-08-21 17:40:15 [scrapy] DEBUG: Crawled (200) <GET https://www.pantaloons.com/p/van-heusen-red-check-shirt-541673.html/> (referer: None)
+2021-08-21 17:42:26 [scrapy] ERROR: Spider error processing <GET https://www.pantaloons.com/p/van-heusen-red-check-shirt-541673.html/> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\urllib3\connectionpool.py", line 670, in urlopen
+    httplib_response = self._make_request(
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\urllib3\connectionpool.py", line 426, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\urllib3\connectionpool.py", line 421, in _make_request
+    httplib_response = conn.getresponse()
+  File "c:\users\g raja\appdata\local\programs\python\python38-32\Lib\http\client.py", line 1322, in getresponse
+    response.begin()
+  File "c:\users\g raja\appdata\local\programs\python\python38-32\Lib\http\client.py", line 303, in begin
+    version, status, reason = self._read_status()
+  File "c:\users\g raja\appdata\local\programs\python\python38-32\Lib\http\client.py", line 264, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "c:\users\g raja\appdata\local\programs\python\python38-32\Lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\core\spidermw.py", line 56, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\core\spidermw.py", line 56, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\core\spidermw.py", line 56, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\core\spidermw.py", line 56, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\core\spidermw.py", line 56, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\G RAJA\Desktop\scrapy_mongo\scraper\scraper\ajar\ajar\spiders\pantloonsprices.py", line 74, in parse
+    browser.get(response.url)
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\urllib3\request.py", line 79, in request
+    return self.request_encode_body(
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\urllib3\request.py", line 171, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\urllib3\poolmanager.py", line 336, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\urllib3\connectionpool.py", line 724, in urlopen
+    retries = retries.increment(
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\urllib3\util\retry.py", line 403, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\urllib3\packages\six.py", line 734, in reraise
+    raise value.with_traceback(tb)
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\urllib3\connectionpool.py", line 670, in urlopen
+    httplib_response = self._make_request(
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\urllib3\connectionpool.py", line 426, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\urllib3\connectionpool.py", line 421, in _make_request
+    httplib_response = conn.getresponse()
+  File "c:\users\g raja\appdata\local\programs\python\python38-32\Lib\http\client.py", line 1322, in getresponse
+    response.begin()
+  File "c:\users\g raja\appdata\local\programs\python\python38-32\Lib\http\client.py", line 303, in begin
+    version, status, reason = self._read_status()
+  File "c:\users\g raja\appdata\local\programs\python\python38-32\Lib\http\client.py", line 264, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "c:\users\g raja\appdata\local\programs\python\python38-32\Lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2021-08-21 17:42:26 [scrapy] INFO: Closing spider (finished)
+2021-08-21 17:42:26 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 351,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 59366,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 147.836202,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 8, 21, 12, 12, 26, 763719),
+ 'httpcompression/response_bytes': 235206,
+ 'httpcompression/response_count': 1,
+ 'log_count/DEBUG': 6,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 15,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/ProtocolError': 1,
+ 'start_time': datetime.datetime(2021, 8, 21, 12, 9, 58, 927517)}
+2021-08-21 17:42:26 [scrapy] INFO: Spider closed (finished)

@@ -1,0 +1,50 @@
+2021-08-21 17:51:21 [scrapy] DEBUG: Crawled (200) <GET https://www.pantaloons.com/p/people-navy-textured-trousers-520025.html/> (referer: None)
+2021-08-21 17:52:19 [scrapy] ERROR: Error processing {'pid': 'https://www.pantaloons.com/p/people-navy-textured-trousers-520025.html/',
+ 'price': ['\n\t\t\t', '765\t\t'],
+ 'price_2': ['55% off'],
+ 'price_mrp': ['\n\t\t\t\t', '1,699 ', '\n\t\t\t']}
+Traceback (most recent call last):
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\twisted\internet\defer.py", line 858, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\utils\defer.py", line 150, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "C:\Users\G RAJA\Desktop\scrapy_mongo\scraper\scraper\ajar\ajar\pipelines.py", line 41, in process_item
+    dup_check = collect_price.find({'pid':item['pid']}).count()
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\pymongo\cursor.py", line 867, in count
+    return self.__collection._count(
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\pymongo\collection.py", line 1679, in _count
+    return self.__database.client._retryable_read(
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\pymongo\mongo_client.py", line 1514, in _retryable_read
+    server = self._select_server(
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\pymongo\mongo_client.py", line 1346, in _select_server
+    server = topology.select_server(server_selector)
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\pymongo\topology.py", line 244, in select_server
+    return random.choice(self.select_servers(selector,
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\pymongo\topology.py", line 202, in select_servers
+    server_descriptions = self._select_servers_loop(
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\pymongo\topology.py", line 218, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: No replica set members match selector "Primary()", Timeout: 30s, Topology Description: <TopologyDescription id: 6120efdcaac731a9a4dd4c83, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('cluster0-shard-00-00.eyv0d.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.265360000000037>, <ServerDescription ('cluster0-shard-00-01.eyv0d.mongodb.net', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('cluster0-shard-00-01.eyv0d.mongodb.net:27017: timed out')>, <ServerDescription ('cluster0-shard-00-02.eyv0d.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.2415200000001187>]>
+2021-08-21 17:52:19 [scrapy] INFO: Closing spider (finished)
+2021-08-21 17:52:19 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 335,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 53808,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 58.117049,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 8, 21, 12, 22, 19, 422270),
+ 'httpcompression/response_bytes': 211495,
+ 'httpcompression/response_count': 1,
+ 'log_count/DEBUG': 41,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 8,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2021, 8, 21, 12, 21, 21, 305221)}
+2021-08-21 17:52:19 [scrapy] INFO: Spider closed (finished)
