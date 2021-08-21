@@ -16,15 +16,15 @@ import requests
 import pymongo
 import urllib
 from pandas import json_normalize
-CHROMEDRIVER_PATH = r"C:\Users\G RAJA\Desktop\scrapy_mongo\scraper\chromedriver.exe"
+# CHROMEDRIVER_PATH = r"C:\Users\G RAJA\Desktop\scrapy_mongo\scraper\chromedriver.exe"
 # chrome requirments
-# GOOGLE_CHROME_PATH = "/app/.apt/usr/bin/google-chrome"
-# CHROMEDRIVER_PATH = "/app/.chromedriver/bin/chromedriver"
+GOOGLE_CHROME_PATH = "/app/.apt/usr/bin/google-chrome"
+CHROMEDRIVER_PATH = "/app/.chromedriver/bin/chromedriver"
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument("--headless")
 chrome_options.add_argument("--no-sandbox")
 from webdriver_manager.chrome import ChromeDriverManager
-# chrome_options.binary_location = GOOGLE_CHROME_PATH
+chrome_options.binary_location = GOOGLE_CHROME_PATH
 
 
 class QuotesInfiniteScrollSpider(scrapy.Spider):
@@ -63,19 +63,19 @@ class QuotesInfiniteScrollSpider(scrapy.Spider):
         # amazon = AmazonUs()
         # ImageExtractor = ImageExtractor()
         # SpecsExtractor = SpecsExtractor()
-        # browser = webdriver.Chrome(
-        #     executable_path=os.environ.get("CHROMEDRIVER_PATH"),
-        #     chrome_options=chrome_options,
-        # )
         browser = webdriver.Chrome(
-            executable_path=CHROMEDRIVER_PATH,
+            executable_path=os.environ.get("CHROMEDRIVER_PATH"),
             chrome_options=chrome_options,
         )
+        # browser = webdriver.Chrome(
+        #     executable_path=CHROMEDRIVER_PATH,
+        #     chrome_options=chrome_options,
+        # ) 
         browser.get(response.url)
         # sleep(0.5)
         scrapy_selector = Selector(text=browser.page_source)
         # css selection of html data tags
-        
+        #
         pid = response.url
         price_mrp = scrapy_selector.css("#divProductPrice > div > span.price::text").getall() or scrapy_selector.css("#divProductPrice > div > h1::text").getall()
         price = scrapy_selector.css("#divProductPrice > h1::text").getall()
