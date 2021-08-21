@@ -32,7 +32,7 @@ pylint==2.4.4
 pyOpenSSL==19.1.0
 queuelib==1.5.0
 requests==2.26.0
-Scrapy==1.8.0
+Scrapy==0.24.4
 scrapy-cloudflare-middleware==0.0.1
 scrapy-selenium==0.0.7
 scrapy-splash==0.7.2
@@ -61,9 +61,7 @@ numpy==1.19.4
 webdriver-manager==3.4.2
 pandas==1.2.3
 scrapyd-client==1.1.0
-scrapyd==1.2.1
+scrapyd==1.0.1
 scrapyd-heroku==0.2.1
-setuptools==51.1.1
-distribute==0.6.49
-git+https://github.com/dmclain/scrapy-heroku 
+scrapy-heroku==0.7.1
 git+https://github.com/scrapinghub/scrapyrt.git
