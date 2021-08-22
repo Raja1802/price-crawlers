@@ -25,7 +25,7 @@ class AjarPipeline:
         client = pymongo.MongoClient("mongodb://ajar:" + urllib.parse.quote_plus("Raja@1802") + "@cluster0-shard-00-00.eyv0d.mongodb.net:27017,cluster0-shard-00-01.eyv0d.mongodb.net:27017,cluster0-shard-00-02.eyv0d.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-110jin-shard-0&authSource=admin&retryWrites=true&w=majority")
         db = client.pantloons_test
         collect = db.reliace_prices
-        collect_price = db.prices
+        collect_price = db.prices_2
         print(item)
         # collect.insert(dict(item))#
         # {'pid':item['pid'],"specKey": item["specKey"]}specValue
