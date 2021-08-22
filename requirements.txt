@@ -5,7 +5,7 @@ setuptools==57.4.0
 attrs==19.1.0
 Automat==0.8.0
 certifi==2019.11.28
-cffi==1.5.0
+cffi==1.14.6
 cfscrape==2.0.8
 chardet==3.0.4
 colorama==0.4.1
@@ -65,4 +65,4 @@ scrapyd-client==1.1.0
 scrapyd==1.2.0a1
 scrapyd-heroku==0.2.1
 git+https://github.com/Raja1802/scrapy-heroku.git
-git+https://github.com/scrapinghub/scrapyrt.git
+scrapyrt==0.12.0
