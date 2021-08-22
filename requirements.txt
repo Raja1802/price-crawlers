@@ -64,4 +64,5 @@ pandas==1.2.3
 scrapyd-client==1.1.0
 scrapyd==1.2.0a1
 scrapyd-heroku==0.2.1
+git+https://github.com/Raja1802/scrapy-heroku.git
 scrapyrt==0.12.0
