@@ -31,10 +31,13 @@ class QuotesInfiniteScrollSpider(scrapy.Spider):
     name = "pantloons_price_data"
     rotate_user_agent = True
     allowed_domains = ["www.pantaloons.com"]
-    arg1 = ""
-    def __init__(self, *args, **kwargs):
-        print(self.arg1)
-    start_urls = [arg1]
+    # arg1 = ""
+    # def __init__(self, *args, **kwargs):
+    #     print(self.arg1)
+    # start_urls = [arg1]
+    def __init__(self, arg1="", **kwargs):  # py36
+        super(QuotesInfiniteScrollSpider, self).__init__(**kwargs)  # python3
+        self.start_urls = [arg1]
     
 
     # def start_requests(self):
