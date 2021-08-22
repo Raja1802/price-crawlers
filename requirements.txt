@@ -63,6 +63,6 @@ webdriver-manager==3.4.2
 pandas==1.2.3
 scrapyd-client==1.1.0
 scrapyd==1.2.0a1
-scrapyd-heroku==0.2.2
+scrapyd-heroku==0.2.1
 git+https://github.com/Raja1802/scrapy-heroku.git
 git+https://github.com/scrapinghub/scrapyrt.git
