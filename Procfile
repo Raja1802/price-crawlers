@@ -7,3 +7,5 @@ worker05: scrapy crawl puma_price_data
 worker06: scrapy crawl paytmmall_price_data
 worker07: scrapy crawl reliance_price_data
 web: scrapyrt -i 0.0.0.0 -p $PORT
+
+
