@@ -31,7 +31,12 @@ class QuotesInfiniteScrollSpider(scrapy.Spider):
     name = "pantloons_price_data"
     rotate_user_agent = True
     allowed_domains = ["www.pantaloons.com"]
-    start_urls = []
+    arg1 = ""
+    def __init__(self, *args, **kwargs):
+        print(self.arg1)
+    start_urls = [arg1]
+    
+
     # def start_requests(self):
     #     myclient = pymongo.MongoClient("mongodb://ajar:" + urllib.parse.quote_plus("Raja@1802") + "@links-shard-00-00.rjots.mongodb.net:27017,links-shard-00-01.rjots.mongodb.net:27017,links-shard-00-02.rjots.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-xypyrq-shard-0&authSource=admin&retryWrites=true&w=majority")
     #     mydb = myclient.LinksDB
