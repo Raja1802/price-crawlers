@@ -31,10 +31,10 @@ class QuotesInfiniteScrollSpider(scrapy.Spider):
     name = "reliance_price_data"
     rotate_user_agent = True
     allowed_domains = ["www.reliancedigital.in"]
-    def __init__(self, arg1="", **kwargs):  # py36
-        super(QuotesInfiniteScrollSpider, self).__init__(**kwargs)  # python3
-        self.start_urls = [arg1]
-    # start_urls = []
+    # def __init__(self, arg1="", **kwargs):  # py36
+        # super(QuotesInfiniteScrollSpider, self).__init__(**kwargs)  # python3
+        # self.start_urls = [arg1]
+    start_urls = []
     # def start_requests(self):
     #     myclient = pymongo.MongoClient("mongodb://ajar:" + urllib.parse.quote_plus("Raja@1802") + "@links-shard-00-00.rjots.mongodb.net:27017,links-shard-00-01.rjots.mongodb.net:27017,links-shard-00-02.rjots.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-xypyrq-shard-0&authSource=admin&retryWrites=true&w=majority")
     #     mydb = myclient.LinksDB
@@ -52,8 +52,8 @@ class QuotesInfiniteScrollSpider(scrapy.Spider):
     #         yield scrapy.Request(url=url, callback=self.parse)
     def parse(self, response):
         browser = webdriver.Chrome(
-            executable_path=ChromeDriverManager().install(),
-            # executable_path=os.environ.get("CHROMEDRIVER_PATH"),
+            # executable_path=ChromeDriverManager().install(),
+            executable_path=os.environ.get("CHROMEDRIVER_PATH"),
             chrome_options=chrome_options,
         )
         # browser = webdriver.PhantomJS()

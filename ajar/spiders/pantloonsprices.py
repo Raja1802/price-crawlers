@@ -31,14 +31,15 @@ class QuotesInfiniteScrollSpider(scrapy.Spider):
     name = "pantloons_price_data"
     rotate_user_agent = True
     allowed_domains = ["www.pantaloons.com"]
-    def __init__(self, arg1="", **kwargs):  # py36
-        super(QuotesInfiniteScrollSpider, self).__init__(**kwargs)  # python3
-        self.start_urls = [arg1]
+    # def __init__(self, arg1="", **kwargs):  # py36
+    #     super(QuotesInfiniteScrollSpider, self).__init__(**kwargs)  # python3
+    #     self.start_urls = [arg1]
+    start_urls = []
     def parse(self, response):
       
         browser = webdriver.Chrome(
-            executable_path=ChromeDriverManager().install(),
-            # executable_path=os.environ.get("CHROMEDRIVER_PATH"),
+            # executable_path=ChromeDriverManager().install(),
+            executable_path=os.environ.get("CHROMEDRIVER_PATH"),
             chrome_options=chrome_options,
         )
         # browser = webdriver.PhantomJS()
