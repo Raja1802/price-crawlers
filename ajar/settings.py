@@ -215,3 +215,12 @@ ITEM_PIPELINES = {
 # ]  # '--headless' if using chrome instead of firefox
 # SCHEDULER_DEBUG = True
 LOG_LEVEL = 'ERROR'
+
+
+
+
+
+
+
+
+# web: scrapyd -------- for scrapyd 
