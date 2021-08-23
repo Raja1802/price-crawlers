@@ -1,1 +1,1 @@
-web: scrapyrt -i 127.0.0.1 -p 3000
+web: scrapyrt -p $PORT -i 0.0.0.0 
