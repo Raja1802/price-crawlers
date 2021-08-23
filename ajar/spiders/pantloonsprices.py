@@ -36,11 +36,12 @@ class QuotesInfiniteScrollSpider(scrapy.Spider):
         self.start_urls = [arg1]
     def parse(self, response):
       
-        browser = webdriver.Chrome(
-            executable_path=ChromeDriverManager().install(),
-            # executable_path=os.environ.get("CHROMEDRIVER_PATH"),
-            chrome_options=chrome_options,
-        )
+        # browser = webdriver.Chrome(
+        #     executable_path=ChromeDriverManager().install(),
+        #     # executable_path=os.environ.get("CHROMEDRIVER_PATH"),
+        #     chrome_options=chrome_options,
+        # )
+        browser = webdriver.PhantomJS()
        
         browser.get(response.url)
         # sleep(0.5)
