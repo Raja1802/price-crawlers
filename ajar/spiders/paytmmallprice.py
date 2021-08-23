@@ -25,7 +25,7 @@ chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument("--headless")
 chrome_options.add_argument("--no-sandbox")
 chrome_options.binary_location = GOOGLE_CHROME_PATH
-
+from webdriver_manager.chrome import ChromeDriverManager
 
 class QuotesInfiniteScrollSpider(scrapy.Spider):
     name = "paytmmall_price_data"
@@ -67,7 +67,8 @@ class QuotesInfiniteScrollSpider(scrapy.Spider):
         # ImageExtractor = ImageExtractor()
         # SpecsExtractor = SpecsExtractor()
         browser = webdriver.Chrome(
-            executable_path=os.environ.get("CHROMEDRIVER_PATH"),
+            # executable_path=os.environ.get("CHROMEDRIVER_PATH"),
+            executable_path=ChromeDriverManager().install(),
             chrome_options=chrome_options,
         )
         # browser = webdriver.Chrome(
