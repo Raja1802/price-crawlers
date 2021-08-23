@@ -20,23 +20,14 @@ import requests
 import pymongo
 import urllib
 from pandas import json_normalize
-# PHANTOMJS = "/app/ajar/spiders/phantomjs"
-# CHROMEDRIVER_PATH = r"C:\Users\G RAJA\Desktop\scrapy_mongo\scraper\chromedriver.exe"
-# chrome_options = webdriver.ChromeOptions()
-# chrome_options.add_argument("--headless")
-# chrome_options.add_argument("--no-sandbox")
-options = webdriver.FirefoxOptions()
-	
-	# enable trace level for debugging 
-# options.log.level = "trace"
-# fp = webdriver.FirefoxProfile()
-# options.add_argument("--remote-debugging-port=9224")
-options.add_argument("--headless")
-options.add_argument("--disable-gpu")
-options.add_argument("--no-sandbox")
-# options.add_argument("--window-size=1920,1080")
-# binary = FirefoxBinary(os.environ.get('FIREFOX_BIN'))
-binary = FirefoxBinary("/app/vendor/firefox/firefox")
+
+GOOGLE_CHROME_PATH = "/app/.apt/usr/bin/google-chrome"
+CHROMEDRIVER_PATH = "/app/.chromedriver/bin/chromedriver"
+chrome_options = webdriver.ChromeOptions()
+chrome_options.add_argument("--headless")
+chrome_options.add_argument("--no-sandbox")
+chrome_options.binary_location = GOOGLE_CHROME_PATH
+from webdriver_manager.chrome import ChromeDriverManager
 
 
 
@@ -45,20 +36,12 @@ class QuotesInfiniteScrollSpider(scrapy.Spider):
     rotate_user_agent = True
     allowed_domains = ["www.flipkart.com"]
     start_urls = []
-    def start_requests(self):
-        myclient = pymongo.MongoClient("mongodb://ajar:" + urllib.parse.quote_plus("Raja@1802") + "@links-shard-00-00.rjots.mongodb.net:27017,links-shard-00-01.rjots.mongodb.net:27017,links-shard-00-02.rjots.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-xypyrq-shard-0&authSource=admin&retryWrites=true&w=majority")
-        mydb = myclient.LinksDB
-        mycol = mydb.Links
-        mydoc = mycol.find({"store_id": 33230})
-        df = json_normalize(mydoc)
-      
-        for index, row in df.iterrows():
-            sleep(2)
-            print(index)
-            yield scrapy.Request(row["product_id"], self.parse)
-         
     def parse(self, response):
-        browser = webdriver.Firefox(firefox_options=options,firefox_binary=binary,executable_path=os.environ.get('GECKODRIVER_PATH'))
+        browser = webdriver.Chrome(
+            # executable_path=os.environ.get("CHROMEDRIVER_PATH"),
+            executable_path=ChromeDriverManager().install(),
+            chrome_options=chrome_options,
+        )
         browser.get(response.url)
         # sleep(2) #
         scrapy_selector = Selector(text=browser.page_source)
@@ -69,7 +52,6 @@ class QuotesInfiniteScrollSpider(scrapy.Spider):
             specValue = i.css("li._21lJbe::text").get() or i.css("div._2vZqPX").get()
             yield SpecsExtractor(pid=pid,specKey=specKey,specValue=specValue)
         # sleep(2)
-        browser.close()
         browser.quit()
         
                 
