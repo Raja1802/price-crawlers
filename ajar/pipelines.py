@@ -22,7 +22,7 @@ class AjarPipeline:
         # client = pymongo.MongoClient("mongodb+srv://ajar:"+ urllib.parse.quote_plus("Raja@1802")+ "@cluster0.rqssk.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
         # mongodb+srv://ajar:<password>
         # print(self)
-        spide = spider
+        spide = str(spider)
         client = pymongo.MongoClient("mongodb://ajar:" + urllib.parse.quote_plus("Raja@1802") + "@cluster0-shard-00-00.eyv0d.mongodb.net:27017,cluster0-shard-00-01.eyv0d.mongodb.net:27017,cluster0-shard-00-02.eyv0d.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-110jin-shard-0&authSource=admin&retryWrites=true&w=majority")
         db = client.prices
         collect = db.reliace_prices
