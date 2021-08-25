@@ -21,41 +21,41 @@ import urllib
 from pandas import json_normalize
 # CHROMEDRIVER_PATH = r"C:\Users\G RAJA\Desktop\scrapy_mongo\scraper\chromedriver.exe"
 # chrome requirments
-# GOOGLE_CHROME_PATH = "/app/.apt/usr/bin/google-chrome"
-# CHROMEDRIVER_PATH = "/app/.chromedriver/bin/chromedriver"
-# chrome_options = webdriver.ChromeOptions()
-# chrome_options.add_argument("--headless")
-# chrome_options.add_argument("--no-sandbox")
-# chrome_options.binary_location = GOOGLE_CHROME_PATH
-options = webdriver.FirefoxOptions()
+GOOGLE_CHROME_PATH = "/app/.apt/usr/bin/google-chrome"
+CHROMEDRIVER_PATH = "/app/.chromedriver/bin/chromedriver"
+chrome_options = webdriver.ChromeOptions()
+chrome_options.add_argument("--headless")
+chrome_options.add_argument("--no-sandbox")
+chrome_options.binary_location = GOOGLE_CHROME_PATH
+# options = webdriver.FirefoxOptions()
 	
-	# enable trace level for debugging 
-# options.log.level = "trace"
-# fp = webdriver.FirefoxProfile()
-# options.add_argument("--remote-debugging-port=9224")
-options.add_argument("--headless")
-options.add_argument("--disable-gpu")
-options.add_argument("--no-sandbox")
-# options.add_argument("--window-size=1920,1080")
-# binary = FirefoxBinary(os.environ.get('FIREFOX_BIN'))
-binary = FirefoxBinary("/app/vendor/firefox/firefox")
+# 	# enable trace level for debugging 
+# # options.log.level = "trace"
+# # fp = webdriver.FirefoxProfile()
+# # options.add_argument("--remote-debugging-port=9224")
+# options.add_argument("--headless")
+# options.add_argument("--disable-gpu")
+# options.add_argument("--no-sandbox")
+# # options.add_argument("--window-size=1920,1080")
+# # binary = FirefoxBinary(os.environ.get('FIREFOX_BIN'))
+# binary = FirefoxBinary("/app/vendor/firefox/firefox")
 
 
 class QuotesInfiniteScrollSpider(scrapy.Spider):
     name = "pantloons_specs_data"
     rotate_user_agent = True
     allowed_domains = ["www.pantaloons.com"]
-    myclient = pymongo.MongoClient("mongodb://ajar:" + urllib.parse.quote_plus("Raja@1802") + "@links-shard-00-00.rjots.mongodb.net:27017,links-shard-00-01.rjots.mongodb.net:27017,links-shard-00-02.rjots.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-xypyrq-shard-0&authSource=admin&retryWrites=true&w=majority")
-    mydb = myclient.LinksDB
-    mycol = mydb.Links
-    mydoc = mycol.find({"store_id": 33233})
-    df = json_normalize(mydoc)
+    # myclient = pymongo.MongoClient("mongodb://ajar:" + urllib.parse.quote_plus("Raja@1802") + "@links-shard-00-00.rjots.mongodb.net:27017,links-shard-00-01.rjots.mongodb.net:27017,links-shard-00-02.rjots.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-xypyrq-shard-0&authSource=admin&retryWrites=true&w=majority")
+    # mydb = myclient.LinksDB
+    # mycol = mydb.Links
+    # mydoc = mycol.find({"store_id": 33233})
+    # df = json_normalize(mydoc)
     
     start_urls = []
-    for index, row in df.iterrows():
-        # sleep(2)
-        # print(index)
-        start_urls.append(row["product_id"])
+    # for index, row in df.iterrows():
+    #     # sleep(2)
+    #     # print(index)
+    #     start_urls.append(row["product_id"])
     # start_urls = []
     # def start_requests(self):
     #     myclient = pymongo.MongoClient("mongodb://ajar:" + urllib.parse.quote_plus("Raja@1802") + "@links-shard-00-00.rjots.mongodb.net:27017,links-shard-00-01.rjots.mongodb.net:27017,links-shard-00-02.rjots.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-xypyrq-shard-0&authSource=admin&retryWrites=true&w=majority")
@@ -79,8 +79,8 @@ class QuotesInfiniteScrollSpider(scrapy.Spider):
         # amazon = AmazonUs()
         # ImageExtractor = ImageExtractor()
         # SpecsExtractor = SpecsExtractor()
-        sleep(1)
-        browser = webdriver.Firefox(firefox_options=options,firefox_binary=binary,executable_path=os.environ.get('GECKODRIVER_PATH'))
+        # sleep(1)
+        browser = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"),chrome_options=chrome_options)
         # browser = webdriver.PhantomJS()
         browser.get(response.url)
         # sleep(0.5)
@@ -95,7 +95,6 @@ class QuotesInfiniteScrollSpider(scrapy.Spider):
         # for j in scrapy_selector.css("div._20Gt85"):
         #     ImageExtractor["image"] = j.css["div.q6DClP"].get()
         # yield SpecImage(images=ImageExtractor, specs=SpecsExtractor)
-        browser.close()
         browser.quit()
         # return amazon
 
