@@ -31,25 +31,25 @@ class QuotesInfiniteScrollSpider(scrapy.Spider):
     rotate_user_agent = True
     allowed_domains = ["www.flipkart.com"]
     start_urls = []
-    def start_requests(self):
-        myclient = pymongo.MongoClient("mongodb://ajar:" + urllib.parse.quote_plus("Raja@1802") + "@cluster0-shard-00-00.qdhaw.mongodb.net:27017,cluster0-shard-00-01.qdhaw.mongodb.net:27017,cluster0-shard-00-02.qdhaw.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-13p7aa-shard-0&authSource=admin&retryWrites=true&w=majority")
-        mydb = myclient.FlipkartMobilesLinks
-        mycol = mydb.FlipkartMobilesLinks
-        mydoc = mycol.find()
-        df = json_normalize(mydoc)
-        # columns = ['product_id']
-        # for column in columns:
-        #     df[column] = df[column].astype(str)
-        #     df[column] =  "https://www.flipkart.com" + df[column]
-        # df.drop(df[df["url"] == "https://www.flipkart.comNAN"].index, inplace=True)
-        # df = pd.read_csv(r"C:\Users\G RAJA\Desktop\ajarani.me\data\exports\AnimeApi\daily\converted_csv\07-02-2021.csv")
-        # df2 = df.drop_duplicates(subset="ep_url" , keep='first')
-        # df2 = df2.iloc[60000:]
-        urls = []
-        for index, row in df.iterrows():
-            urls.append(row["product_id"]) 
-        for url in urls:
-            yield scrapy.Request(url=url, callback=self.parse)
+    # def start_requests(self):
+    #     myclient = pymongo.MongoClient("mongodb://ajar:" + urllib.parse.quote_plus("Raja@1802") + "@cluster0-shard-00-00.qdhaw.mongodb.net:27017,cluster0-shard-00-01.qdhaw.mongodb.net:27017,cluster0-shard-00-02.qdhaw.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-13p7aa-shard-0&authSource=admin&retryWrites=true&w=majority")
+    #     mydb = myclient.FlipkartMobilesLinks
+    #     mycol = mydb.FlipkartMobilesLinks
+    #     mydoc = mycol.find()
+    #     df = json_normalize(mydoc)
+    #     # columns = ['product_id']
+    #     # for column in columns:
+    #     #     df[column] = df[column].astype(str)
+    #     #     df[column] =  "https://www.flipkart.com" + df[column]
+    #     # df.drop(df[df["url"] == "https://www.flipkart.comNAN"].index, inplace=True)
+    #     # df = pd.read_csv(r"C:\Users\G RAJA\Desktop\ajarani.me\data\exports\AnimeApi\daily\converted_csv\07-02-2021.csv")
+    #     # df2 = df.drop_duplicates(subset="ep_url" , keep='first')
+    #     # df2 = df2.iloc[60000:]
+    #     urls = []
+    #     for index, row in df.iterrows():
+    #         urls.append(row["product_id"]) 
+    #     for url in urls:
+    #         yield scrapy.Request(url=url, callback=self.parse)
     # rules = (Rule(sle(allow=( "shirt", "shoes","mobile","cycle","women","men","/p/"), deny=("product-reviews")), callback="parse_result", follow=True),)
     # parsing results with below function
     def parse(self, response):
