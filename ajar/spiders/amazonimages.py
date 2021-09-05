@@ -25,7 +25,7 @@ chrome_options.add_argument("--headless")
 chrome_options.add_argument("--no-sandbox")
 chrome_options.binary_location = GOOGLE_CHROME_PATH
 
-
+#
 class QuotesInfiniteScrollSpider(scrapy.Spider):
     name = "amazon_images_data"
     rotate_user_agent = True
