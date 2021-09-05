@@ -1,0 +1,23 @@
+2021-09-05 09:14:10 [scrapy] DEBUG: Crawled (200) <GET https://www.amazon.in/Seagate-Portable-External-Hard-Drive/dp/B07CRG94G3/ref=lp_16225007011_1_1> (referer: None)
+2021-09-05 09:14:10 [scrapy] INFO: Closing spider (finished)
+2021-09-05 09:14:10 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 397,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 301840,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 1.783826,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 9, 5, 3, 44, 10, 853755),
+ 'httpcompression/response_bytes': 1402996,
+ 'httpcompression/response_count': 1,
+ 'log_count/DEBUG': 1,
+ 'log_count/INFO': 8,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2021, 9, 5, 3, 44, 9, 69929)}
+2021-09-05 09:14:10 [scrapy] INFO: Spider closed (finished)

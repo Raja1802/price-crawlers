@@ -1,0 +1,82 @@
+2021-09-05 07:26:16 [scrapy] DEBUG: Crawled (200) <GET https://www.reliancedigital.in/reconnect-1-5-ton-5-star-xs-185px0-inverter-split-ac/p/581109869> (referer: None)
+2021-09-05 07:26:26 [scrapy] DEBUG: Scraped from <200 https://www.reliancedigital.in/reconnect-1-5-ton-5-star-xs-185px0-inverter-split-ac/p/581109869>
+{'image': '/medias/Reconnect-XS-185PX0-Air-Conditioners-581109869-i-8-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wyMTA2MTh8aW1hZ2UvanBlZ3xpbWFnZXMvaDc2L2hkZC85NDgxOTA0NTIxMjQ2LmpwZ3wxZjE3OWUyOTU4MjlkODliOWI1MmRkZDBiZWE5NTNiZWI0ODg3ZjQ3NWFiMmEyYzY1NTRiMDgyYmFkN2RhZGEz',
+ 'pid': 'https://www.reliancedigital.in/reconnect-1-5-ton-5-star-xs-185px0-inverter-split-ac/p/581109869'}
+2021-09-05 07:26:28 [scrapy] DEBUG: Scraped from <200 https://www.reliancedigital.in/reconnect-1-5-ton-5-star-xs-185px0-inverter-split-ac/p/581109869>
+{'image': '/medias/Reconnect-XS-185PX0-Air-Conditioners-581109869-i-9-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wxNjc5Mzh8aW1hZ2UvanBlZ3xpbWFnZXMvaDk3L2g0Ni85NDgxOTA0ODQ4OTI2LmpwZ3wyYjQ5YmNiYjEwNmQ2NjZkOWI5Mzg5YTEwMTA1NDliNGRmYWZlMjljYTliYTU5YTBmZjgxYzc3YWYwYzQ5Zjgy',
+ 'pid': 'https://www.reliancedigital.in/reconnect-1-5-ton-5-star-xs-185px0-inverter-split-ac/p/581109869'}
+2021-09-05 07:26:31 [scrapy] DEBUG: Scraped from <200 https://www.reliancedigital.in/reconnect-1-5-ton-5-star-xs-185px0-inverter-split-ac/p/581109869>
+{'image': '/medias/Reconnect-XS-185PX0-Air-Conditioners-581109869-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wzMTk5MnxpbWFnZS9qcGVnfGltYWdlcy9oMGMvaGQ1Lzk0ODE5MDIyMjc0ODYuanBnfDA0YmUwNTYyNjQ4MTAzZjFmOWE2NzdhNDkyZGI5NjdkNzU5MGFjYjI4NjU4N2I0ZTliMWU3YzZjMjRmY2UzZjQ',
+ 'pid': 'https://www.reliancedigital.in/reconnect-1-5-ton-5-star-xs-185px0-inverter-split-ac/p/581109869'}
+2021-09-05 07:26:33 [scrapy] DEBUG: Scraped from <200 https://www.reliancedigital.in/reconnect-1-5-ton-5-star-xs-185px0-inverter-split-ac/p/581109869>
+{'image': '/medias/Reconnect-XS-185PX0-Air-Conditioners-581109869-i-2-1200Wx1200H?context=bWFzdGVyfGltYWdlc3w1MzU2MnxpbWFnZS9qcGVnfGltYWdlcy9oNWUvaGRiLzk0ODE5MDI1NTUxNjYuanBnfDIzOGM1NDY4MzZkZWQwZmIzNGMxNmEzYzYzNDBkNGRhZmFhNDc1NzFkYjQ3NWM5Zjk3ZjQxODRlNGJhNTQ0YjM',
+ 'pid': 'https://www.reliancedigital.in/reconnect-1-5-ton-5-star-xs-185px0-inverter-split-ac/p/581109869'}
+2021-09-05 07:26:35 [scrapy] DEBUG: Scraped from <200 https://www.reliancedigital.in/reconnect-1-5-ton-5-star-xs-185px0-inverter-split-ac/p/581109869>
+{'image': '/medias/Reconnect-XS-185PX0-Air-Conditioners-581109869-i-3-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wzOTU1NXxpbWFnZS9qcGVnfGltYWdlcy9oNzEvaGM2Lzk0ODE5MDI4ODI4NDYuanBnfDcyYThiNjgxNzE2OTM5YzM3MWZmNmNhYWI0ZDkyMjFkNjIzNGY1MzViNDBhYmFlMDE4ZjI0ZmQwZmJhYTdiMDg',
+ 'pid': 'https://www.reliancedigital.in/reconnect-1-5-ton-5-star-xs-185px0-inverter-split-ac/p/581109869'}
+2021-09-05 07:26:38 [scrapy] DEBUG: Scraped from <200 https://www.reliancedigital.in/reconnect-1-5-ton-5-star-xs-185px0-inverter-split-ac/p/581109869>
+{'image': '/medias/Reconnect-XS-185PX0-Air-Conditioners-581109869-i-4-1200Wx1200H?context=bWFzdGVyfGltYWdlc3w0ODM3OHxpbWFnZS9qcGVnfGltYWdlcy9oYjEvaDgyLzk0ODE5MDMyMTA1MjYuanBnfDEyMDM0OTBlNWMzODVmMDM3YTk5M2JmOGExNDViNWI1N2M0OWJjOWRhZTdmNzlkM2ExOGU4MDlhZWNhZTU2ZmI',
+ 'pid': 'https://www.reliancedigital.in/reconnect-1-5-ton-5-star-xs-185px0-inverter-split-ac/p/581109869'}
+2021-09-05 07:26:40 [scrapy] DEBUG: Scraped from <200 https://www.reliancedigital.in/reconnect-1-5-ton-5-star-xs-185px0-inverter-split-ac/p/581109869>
+{'image': '/medias/Reconnect-XS-185PX0-Air-Conditioners-581109869-i-5-1200Wx1200H?context=bWFzdGVyfGltYWdlc3w3ODUyN3xpbWFnZS9qcGVnfGltYWdlcy9oZjIvaGMxLzk0ODE5MDM1MzgyMDYuanBnfDYyMjJiMjc3MDllNmM2NDBhOWI2ZGE3ODEzMjFmYmZkYmEzNWY0NmRjZDY3MjM5NjY5MTYyOTNlZjljMjk4Mjg',
+ 'pid': 'https://www.reliancedigital.in/reconnect-1-5-ton-5-star-xs-185px0-inverter-split-ac/p/581109869'}
+2021-09-05 07:26:42 [scrapy] DEBUG: Scraped from <200 https://www.reliancedigital.in/reconnect-1-5-ton-5-star-xs-185px0-inverter-split-ac/p/581109869>
+{'image': '/medias/Reconnect-XS-185PX0-Air-Conditioners-581109869-i-6-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wxODQwMTJ8aW1hZ2UvanBlZ3xpbWFnZXMvaDE3L2gxYy85NDgxOTAzODY1ODg2LmpwZ3xlNjBkMTdmYzUwMGZmNTgxNGUzNGRjOTNkNzViNWI4ZTQ3OTRlMzU1Njk0N2YwOTNiZDE3N2Y5NTI0NGIyNGY1',
+ 'pid': 'https://www.reliancedigital.in/reconnect-1-5-ton-5-star-xs-185px0-inverter-split-ac/p/581109869'}
+2021-09-05 07:26:44 [scrapy] DEBUG: Scraped from <200 https://www.reliancedigital.in/reconnect-1-5-ton-5-star-xs-185px0-inverter-split-ac/p/581109869>
+{'image': '/medias/Reconnect-XS-185PX0-Air-Conditioners-581109869-i-7-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wxNzQ0NDh8aW1hZ2UvanBlZ3xpbWFnZXMvaGI5L2g3Zi85NDgxOTA0MTkzNTY2LmpwZ3wxNTFlMTk2ZDVjM2Y1YzU5ZWE0NGRkOThiYWM2ZjUzYWE4MWQ5MjI0NzAwNzBmMzk1MTQ2Y2VkOWNkZmE2ZDE3',
+ 'pid': 'https://www.reliancedigital.in/reconnect-1-5-ton-5-star-xs-185px0-inverter-split-ac/p/581109869'}
+2021-09-05 07:26:47 [scrapy] DEBUG: Scraped from <200 https://www.reliancedigital.in/reconnect-1-5-ton-5-star-xs-185px0-inverter-split-ac/p/581109869>
+{'image': '/medias/Reconnect-XS-185PX0-Air-Conditioners-581109869-i-8-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wyMTA2MTh8aW1hZ2UvanBlZ3xpbWFnZXMvaDc2L2hkZC85NDgxOTA0NTIxMjQ2LmpwZ3wxZjE3OWUyOTU4MjlkODliOWI1MmRkZDBiZWE5NTNiZWI0ODg3ZjQ3NWFiMmEyYzY1NTRiMDgyYmFkN2RhZGEz',
+ 'pid': 'https://www.reliancedigital.in/reconnect-1-5-ton-5-star-xs-185px0-inverter-split-ac/p/581109869'}
+2021-09-05 07:26:49 [scrapy] DEBUG: Scraped from <200 https://www.reliancedigital.in/reconnect-1-5-ton-5-star-xs-185px0-inverter-split-ac/p/581109869>
+{'image': '/medias/Reconnect-XS-185PX0-Air-Conditioners-581109869-i-9-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wxNjc5Mzh8aW1hZ2UvanBlZ3xpbWFnZXMvaDk3L2g0Ni85NDgxOTA0ODQ4OTI2LmpwZ3wyYjQ5YmNiYjEwNmQ2NjZkOWI5Mzg5YTEwMTA1NDliNGRmYWZlMjljYTliYTU5YTBmZjgxYzc3YWYwYzQ5Zjgy',
+ 'pid': 'https://www.reliancedigital.in/reconnect-1-5-ton-5-star-xs-185px0-inverter-split-ac/p/581109869'}
+2021-09-05 07:26:51 [scrapy] DEBUG: Scraped from <200 https://www.reliancedigital.in/reconnect-1-5-ton-5-star-xs-185px0-inverter-split-ac/p/581109869>
+{'image': '/medias/Reconnect-XS-185PX0-Air-Conditioners-581109869-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wzMTk5MnxpbWFnZS9qcGVnfGltYWdlcy9oMGMvaGQ1Lzk0ODE5MDIyMjc0ODYuanBnfDA0YmUwNTYyNjQ4MTAzZjFmOWE2NzdhNDkyZGI5NjdkNzU5MGFjYjI4NjU4N2I0ZTliMWU3YzZjMjRmY2UzZjQ',
+ 'pid': 'https://www.reliancedigital.in/reconnect-1-5-ton-5-star-xs-185px0-inverter-split-ac/p/581109869'}
+2021-09-05 07:26:53 [scrapy] DEBUG: Scraped from <200 https://www.reliancedigital.in/reconnect-1-5-ton-5-star-xs-185px0-inverter-split-ac/p/581109869>
+{'image': '/medias/Reconnect-XS-185PX0-Air-Conditioners-581109869-i-2-1200Wx1200H?context=bWFzdGVyfGltYWdlc3w1MzU2MnxpbWFnZS9qcGVnfGltYWdlcy9oNWUvaGRiLzk0ODE5MDI1NTUxNjYuanBnfDIzOGM1NDY4MzZkZWQwZmIzNGMxNmEzYzYzNDBkNGRhZmFhNDc1NzFkYjQ3NWM5Zjk3ZjQxODRlNGJhNTQ0YjM',
+ 'pid': 'https://www.reliancedigital.in/reconnect-1-5-ton-5-star-xs-185px0-inverter-split-ac/p/581109869'}
+2021-09-05 07:26:56 [scrapy] DEBUG: Scraped from <200 https://www.reliancedigital.in/reconnect-1-5-ton-5-star-xs-185px0-inverter-split-ac/p/581109869>
+{'image': '/medias/Reconnect-XS-185PX0-Air-Conditioners-581109869-i-3-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wzOTU1NXxpbWFnZS9qcGVnfGltYWdlcy9oNzEvaGM2Lzk0ODE5MDI4ODI4NDYuanBnfDcyYThiNjgxNzE2OTM5YzM3MWZmNmNhYWI0ZDkyMjFkNjIzNGY1MzViNDBhYmFlMDE4ZjI0ZmQwZmJhYTdiMDg',
+ 'pid': 'https://www.reliancedigital.in/reconnect-1-5-ton-5-star-xs-185px0-inverter-split-ac/p/581109869'}
+2021-09-05 07:26:58 [scrapy] DEBUG: Scraped from <200 https://www.reliancedigital.in/reconnect-1-5-ton-5-star-xs-185px0-inverter-split-ac/p/581109869>
+{'image': '/medias/Reconnect-XS-185PX0-Air-Conditioners-581109869-i-4-1200Wx1200H?context=bWFzdGVyfGltYWdlc3w0ODM3OHxpbWFnZS9qcGVnfGltYWdlcy9oYjEvaDgyLzk0ODE5MDMyMTA1MjYuanBnfDEyMDM0OTBlNWMzODVmMDM3YTk5M2JmOGExNDViNWI1N2M0OWJjOWRhZTdmNzlkM2ExOGU4MDlhZWNhZTU2ZmI',
+ 'pid': 'https://www.reliancedigital.in/reconnect-1-5-ton-5-star-xs-185px0-inverter-split-ac/p/581109869'}
+2021-09-05 07:27:00 [scrapy] DEBUG: Scraped from <200 https://www.reliancedigital.in/reconnect-1-5-ton-5-star-xs-185px0-inverter-split-ac/p/581109869>
+{'image': '/medias/Reconnect-XS-185PX0-Air-Conditioners-581109869-i-5-1200Wx1200H?context=bWFzdGVyfGltYWdlc3w3ODUyN3xpbWFnZS9qcGVnfGltYWdlcy9oZjIvaGMxLzk0ODE5MDM1MzgyMDYuanBnfDYyMjJiMjc3MDllNmM2NDBhOWI2ZGE3ODEzMjFmYmZkYmEzNWY0NmRjZDY3MjM5NjY5MTYyOTNlZjljMjk4Mjg',
+ 'pid': 'https://www.reliancedigital.in/reconnect-1-5-ton-5-star-xs-185px0-inverter-split-ac/p/581109869'}
+2021-09-05 07:27:02 [scrapy] DEBUG: Scraped from <200 https://www.reliancedigital.in/reconnect-1-5-ton-5-star-xs-185px0-inverter-split-ac/p/581109869>
+{'image': '/medias/Reconnect-XS-185PX0-Air-Conditioners-581109869-i-6-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wxODQwMTJ8aW1hZ2UvanBlZ3xpbWFnZXMvaDE3L2gxYy85NDgxOTAzODY1ODg2LmpwZ3xlNjBkMTdmYzUwMGZmNTgxNGUzNGRjOTNkNzViNWI4ZTQ3OTRlMzU1Njk0N2YwOTNiZDE3N2Y5NTI0NGIyNGY1',
+ 'pid': 'https://www.reliancedigital.in/reconnect-1-5-ton-5-star-xs-185px0-inverter-split-ac/p/581109869'}
+2021-09-05 07:27:04 [scrapy] DEBUG: Scraped from <200 https://www.reliancedigital.in/reconnect-1-5-ton-5-star-xs-185px0-inverter-split-ac/p/581109869>
+{'image': '/medias/Reconnect-XS-185PX0-Air-Conditioners-581109869-i-7-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wxNzQ0NDh8aW1hZ2UvanBlZ3xpbWFnZXMvaGI5L2g3Zi85NDgxOTA0MTkzNTY2LmpwZ3wxNTFlMTk2ZDVjM2Y1YzU5ZWE0NGRkOThiYWM2ZjUzYWE4MWQ5MjI0NzAwNzBmMzk1MTQ2Y2VkOWNkZmE2ZDE3',
+ 'pid': 'https://www.reliancedigital.in/reconnect-1-5-ton-5-star-xs-185px0-inverter-split-ac/p/581109869'}
+2021-09-05 07:27:07 [scrapy] DEBUG: Scraped from <200 https://www.reliancedigital.in/reconnect-1-5-ton-5-star-xs-185px0-inverter-split-ac/p/581109869>
+{'image': '/medias/Reconnect-XS-185PX0-Air-Conditioners-581109869-i-8-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wyMTA2MTh8aW1hZ2UvanBlZ3xpbWFnZXMvaDc2L2hkZC85NDgxOTA0NTIxMjQ2LmpwZ3wxZjE3OWUyOTU4MjlkODliOWI1MmRkZDBiZWE5NTNiZWI0ODg3ZjQ3NWFiMmEyYzY1NTRiMDgyYmFkN2RhZGEz',
+ 'pid': 'https://www.reliancedigital.in/reconnect-1-5-ton-5-star-xs-185px0-inverter-split-ac/p/581109869'}
+2021-09-05 07:27:09 [scrapy] DEBUG: Scraped from <200 https://www.reliancedigital.in/reconnect-1-5-ton-5-star-xs-185px0-inverter-split-ac/p/581109869>
+{'image': '/medias/Reconnect-XS-185PX0-Air-Conditioners-581109869-i-9-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wxNjc5Mzh8aW1hZ2UvanBlZ3xpbWFnZXMvaDk3L2g0Ni85NDgxOTA0ODQ4OTI2LmpwZ3wyYjQ5YmNiYjEwNmQ2NjZkOWI5Mzg5YTEwMTA1NDliNGRmYWZlMjljYTliYTU5YTBmZjgxYzc3YWYwYzQ5Zjgy',
+ 'pid': 'https://www.reliancedigital.in/reconnect-1-5-ton-5-star-xs-185px0-inverter-split-ac/p/581109869'}
+2021-09-05 07:27:11 [scrapy] INFO: Closing spider (finished)
+2021-09-05 07:27:11 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 352,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 415332,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 58.138353,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 9, 5, 1, 57, 11, 789074),
+ 'item_scraped_count': 20,
+ 'log_count/DEBUG': 1182,
+ 'log_count/INFO': 8,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2021, 9, 5, 1, 56, 13, 650721)}
+2021-09-05 07:27:11 [scrapy] INFO: Spider closed (finished)

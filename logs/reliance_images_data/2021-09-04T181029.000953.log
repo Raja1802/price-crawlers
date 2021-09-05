@@ -1,0 +1,52 @@
+2021-09-04 18:10:36 [scrapy] DEBUG: Crawled (200) <GET https://www.reliancedigital.in/bpl-109-22-cm-43-inch-full-hd-android-smart-tv-with-dolby-surround-sound-technology-43f-a4300/p/491893307> (referer: None)
+2021-09-04 18:11:30 [scrapy] ERROR: Spider error processing <GET https://www.reliancedigital.in/bpl-109-22-cm-43-inch-full-hd-android-smart-tv-with-dolby-surround-sound-technology-43f-a4300/p/491893307> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\core\spidermw.py", line 56, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\core\spidermw.py", line 56, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\core\spidermw.py", line 56, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\core\spidermw.py", line 56, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\core\spidermw.py", line 56, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\G RAJA\Desktop\scrapy_mongo\scraper\scraper\ajar\ajar\spiders\relianceimages.py", line 43, in parse
+    print("clicked")
+AttributeError: 'SelectorList' object has no attribute 'click'
+2021-09-04 18:11:30 [scrapy] INFO: Closing spider (finished)
+2021-09-04 18:11:30 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 405,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 381506,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 61.801631,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 9, 4, 12, 41, 30, 838719),
+ 'log_count/DEBUG': 11,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 8,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/AttributeError': 1,
+ 'start_time': datetime.datetime(2021, 9, 4, 12, 40, 29, 37088)}
+2021-09-04 18:11:30 [scrapy] INFO: Spider closed (finished)

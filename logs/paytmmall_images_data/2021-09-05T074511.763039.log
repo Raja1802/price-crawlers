@@ -1,0 +1,39 @@
+2021-09-05 07:45:17 [scrapy] DEBUG: Crawled (200) <GET https://paytmmall.com/campus-sports-shoes-for-women-CMPLXFOOCAMPUS-SPORTCAMP600710613470D5-pdp> (referer: None)
+2021-09-05 07:45:25 [scrapy] DEBUG: Scraped from <200 https://paytmmall.com/campus-sports-shoes-for-women-CMPLXFOOCAMPUS-SPORTCAMP600710613470D5-pdp>
+{'image': 'https://assetscdn1.paytm.com/images/catalog/product/F/FO/FOOCAMPUS-SPORTCAMP600710E7AE03EE/1564580364565_0..jpg?imwidth=64&impolicy=hq',
+ 'pid': 'https://paytmmall.com/campus-sports-shoes-for-women-CMPLXFOOCAMPUS-SPORTCAMP600710613470D5-pdp'}
+2021-09-05 07:45:28 [scrapy] DEBUG: Scraped from <200 https://paytmmall.com/campus-sports-shoes-for-women-CMPLXFOOCAMPUS-SPORTCAMP600710613470D5-pdp>
+{'image': 'https://assetscdn1.paytm.com/images/catalog/product/F/FO/FOOCAMPUS-SPORTCAMP600710E7AE03EE/1564580407204_1..jpg?imwidth=64&impolicy=hq',
+ 'pid': 'https://paytmmall.com/campus-sports-shoes-for-women-CMPLXFOOCAMPUS-SPORTCAMP600710613470D5-pdp'}
+2021-09-05 07:45:30 [scrapy] DEBUG: Scraped from <200 https://paytmmall.com/campus-sports-shoes-for-women-CMPLXFOOCAMPUS-SPORTCAMP600710613470D5-pdp>
+{'image': 'https://assetscdn1.paytm.com/images/catalog/product/F/FO/FOOCAMPUS-SPORTCAMP600710E7AE03EE/1564580618274_2..jpg?imwidth=64&impolicy=hq',
+ 'pid': 'https://paytmmall.com/campus-sports-shoes-for-women-CMPLXFOOCAMPUS-SPORTCAMP600710613470D5-pdp'}
+2021-09-05 07:45:33 [scrapy] DEBUG: Scraped from <200 https://paytmmall.com/campus-sports-shoes-for-women-CMPLXFOOCAMPUS-SPORTCAMP600710613470D5-pdp>
+{'image': 'https://assetscdn1.paytm.com/images/catalog/product/F/FO/FOOCAMPUS-SPORTCAMP600710E7AE03EE/1564580484352_3..jpg?imwidth=64&impolicy=hq',
+ 'pid': 'https://paytmmall.com/campus-sports-shoes-for-women-CMPLXFOOCAMPUS-SPORTCAMP600710613470D5-pdp'}
+2021-09-05 07:45:35 [scrapy] DEBUG: Scraped from <200 https://paytmmall.com/campus-sports-shoes-for-women-CMPLXFOOCAMPUS-SPORTCAMP600710613470D5-pdp>
+{'image': 'https://assetscdn1.paytm.com/images/catalog/product/F/FO/FOOCAMPUS-SPORTCAMP600710E7AE03EE/1564618204510_4..jpg?imwidth=64&impolicy=hq',
+ 'pid': 'https://paytmmall.com/campus-sports-shoes-for-women-CMPLXFOOCAMPUS-SPORTCAMP600710613470D5-pdp'}
+2021-09-05 07:45:38 [scrapy] INFO: Closing spider (finished)
+2021-09-05 07:45:38 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 297,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 63762,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 21.257863,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 9, 5, 2, 15, 38, 5421),
+ 'httpcompression/response_bytes': 504995,
+ 'httpcompression/response_count': 1,
+ 'item_scraped_count': 5,
+ 'log_count/DEBUG': 254,
+ 'log_count/INFO': 8,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2021, 9, 5, 2, 15, 16, 747558)}
+2021-09-05 07:45:38 [scrapy] INFO: Spider closed (finished)

@@ -1,0 +1,95 @@
+2021-09-05 07:25:40 [scrapy] DEBUG: Crawled (200) <GET https://www.reliancedigital.in/reconnect-1-5-ton-5-star-xs-185px0-inverter-split-ac/p/581109869> (referer: None)
+2021-09-05 07:25:52 [scrapy] DEBUG: Scraped from <200 https://www.reliancedigital.in/reconnect-1-5-ton-5-star-xs-185px0-inverter-split-ac/p/581109869>
+{'image': '/medias/Reconnect-XS-185PX0-Air-Conditioners-581109869-i-7-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wxNzQ0NDh8aW1hZ2UvanBlZ3xpbWFnZXMvaGI5L2g3Zi85NDgxOTA0MTkzNTY2LmpwZ3wxNTFlMTk2ZDVjM2Y1YzU5ZWE0NGRkOThiYWM2ZjUzYWE4MWQ5MjI0NzAwNzBmMzk1MTQ2Y2VkOWNkZmE2ZDE3',
+ 'pid': 'https://www.reliancedigital.in/reconnect-1-5-ton-5-star-xs-185px0-inverter-split-ac/p/581109869'}
+2021-09-05 07:26:01 [scrapy] ERROR: Spider error processing <GET https://www.reliancedigital.in/reconnect-1-5-ton-5-star-xs-185px0-inverter-split-ac/p/581109869> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
+    conn = connection.create_connection(
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\urllib3\util\connection.py", line 84, in create_connection
+    raise err
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\urllib3\util\connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\urllib3\connectionpool.py", line 670, in urlopen
+    httplib_response = self._make_request(
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\urllib3\connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "c:\users\g raja\appdata\local\programs\python\python38-32\Lib\http\client.py", line 1230, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "c:\users\g raja\appdata\local\programs\python\python38-32\Lib\http\client.py", line 1276, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "c:\users\g raja\appdata\local\programs\python\python38-32\Lib\http\client.py", line 1225, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "c:\users\g raja\appdata\local\programs\python\python38-32\Lib\http\client.py", line 1004, in _send_output
+    self.send(msg)
+  File "c:\users\g raja\appdata\local\programs\python\python38-32\Lib\http\client.py", line 944, in send
+    self.connect()
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\urllib3\connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\urllib3\connection.py", line 171, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x01498058>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\core\spidermw.py", line 56, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\core\spidermw.py", line 56, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\core\spidermw.py", line 56, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\core\spidermw.py", line 56, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\core\spidermw.py", line 56, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\G RAJA\Desktop\scrapy_mongo\scraper\scraper\ajar\ajar\spiders\relianceimages.py", line 47, in parse
+    clicer = i.find_element_by_css_selector("img.imgCenter")
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 430, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 658, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT,
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\urllib3\request.py", line 79, in request
+    return self.request_encode_body(
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\urllib3\request.py", line 171, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\urllib3\poolmanager.py", line 336, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\urllib3\connectionpool.py", line 752, in urlopen
+    return self.urlopen(
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\urllib3\connectionpool.py", line 752, in urlopen
+    return self.urlopen(
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\urllib3\connectionpool.py", line 752, in urlopen
+    return self.urlopen(
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\urllib3\connectionpool.py", line 724, in urlopen
+    retries = retries.increment(
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\urllib3\util\retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=51444): Max retries exceeded with url: /session/52f0a3a9f51cd5225d990f1de87d0648/element/b15d37cc-4295-43fa-9bfa-8924afac76fb/element (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x01498058>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))

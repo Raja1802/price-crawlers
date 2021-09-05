@@ -1,0 +1,39 @@
+2021-09-05 08:14:57 [scrapy] DEBUG: Crawled (200) <GET https://www.ajio.com/red-round-tiered-embellished-lehenga-choli-set-with-dupatta/p/461884174_navy> (referer: None)
+2021-09-05 08:15:09 [scrapy] DEBUG: Scraped from <200 https://www.ajio.com/red-round-tiered-embellished-lehenga-choli-set-with-dupatta/p/461884174_navy>
+{'image': None,
+ 'pid': 'https://www.ajio.com/red-round-tiered-embellished-lehenga-choli-set-with-dupatta/p/461884174_navy'}
+2021-09-05 08:15:11 [scrapy] DEBUG: Scraped from <200 https://www.ajio.com/red-round-tiered-embellished-lehenga-choli-set-with-dupatta/p/461884174_navy>
+{'image': None,
+ 'pid': 'https://www.ajio.com/red-round-tiered-embellished-lehenga-choli-set-with-dupatta/p/461884174_navy'}
+2021-09-05 08:15:13 [scrapy] DEBUG: Scraped from <200 https://www.ajio.com/red-round-tiered-embellished-lehenga-choli-set-with-dupatta/p/461884174_navy>
+{'image': None,
+ 'pid': 'https://www.ajio.com/red-round-tiered-embellished-lehenga-choli-set-with-dupatta/p/461884174_navy'}
+2021-09-05 08:15:15 [scrapy] DEBUG: Scraped from <200 https://www.ajio.com/red-round-tiered-embellished-lehenga-choli-set-with-dupatta/p/461884174_navy>
+{'image': None,
+ 'pid': 'https://www.ajio.com/red-round-tiered-embellished-lehenga-choli-set-with-dupatta/p/461884174_navy'}
+2021-09-05 08:15:18 [scrapy] DEBUG: Scraped from <200 https://www.ajio.com/red-round-tiered-embellished-lehenga-choli-set-with-dupatta/p/461884174_navy>
+{'image': None,
+ 'pid': 'https://www.ajio.com/red-round-tiered-embellished-lehenga-choli-set-with-dupatta/p/461884174_navy'}
+2021-09-05 08:15:20 [scrapy] INFO: Closing spider (finished)
+2021-09-05 08:15:20 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 364,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 41480,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 23.391894,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 9, 5, 2, 45, 20, 448412),
+ 'httpcompression/response_bytes': 299991,
+ 'httpcompression/response_count': 1,
+ 'item_scraped_count': 5,
+ 'log_count/DEBUG': 229,
+ 'log_count/INFO': 8,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2021, 9, 5, 2, 44, 57, 56518)}
+2021-09-05 08:15:20 [scrapy] INFO: Spider closed (finished)

@@ -1,0 +1,48 @@
+2021-09-05 08:59:33 [scrapy] DEBUG: Crawled (200) <GET https://in.puma.com/in/en/pd/suede-triplex-unisex-sneakers/381175.html?dwvar_381175_color=01> (referer: None)
+2021-09-05 08:59:42 [scrapy] DEBUG: Scraped from <200 https://in.puma.com/in/en/pd/suede-triplex-unisex-sneakers/381175.html?dwvar_381175_color=01>
+{'image': 'https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/381175/01/sv04/fnd/IND/fmt/png/Suede-Triplex-Unisex-Sneakers',
+ 'pid': 'https://in.puma.com/in/en/pd/suede-triplex-unisex-sneakers/381175.html?dwvar_381175_color=01'}
+2021-09-05 08:59:45 [scrapy] DEBUG: Scraped from <200 https://in.puma.com/in/en/pd/suede-triplex-unisex-sneakers/381175.html?dwvar_381175_color=01>
+{'image': 'https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/381175/01/sv01/fnd/IND/fmt/png/Suede-Triplex-Unisex-Sneakers',
+ 'pid': 'https://in.puma.com/in/en/pd/suede-triplex-unisex-sneakers/381175.html?dwvar_381175_color=01'}
+2021-09-05 08:59:47 [scrapy] DEBUG: Scraped from <200 https://in.puma.com/in/en/pd/suede-triplex-unisex-sneakers/381175.html?dwvar_381175_color=01>
+{'image': 'https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/381175/01/fnd/IND/fmt/png/Suede-Triplex-Unisex-Sneakers',
+ 'pid': 'https://in.puma.com/in/en/pd/suede-triplex-unisex-sneakers/381175.html?dwvar_381175_color=01'}
+2021-09-05 08:59:49 [scrapy] DEBUG: Scraped from <200 https://in.puma.com/in/en/pd/suede-triplex-unisex-sneakers/381175.html?dwvar_381175_color=01>
+{'image': 'https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/381175/01/bv/fnd/IND/fmt/png/Suede-Triplex-Unisex-Sneakers',
+ 'pid': 'https://in.puma.com/in/en/pd/suede-triplex-unisex-sneakers/381175.html?dwvar_381175_color=01'}
+2021-09-05 08:59:52 [scrapy] DEBUG: Scraped from <200 https://in.puma.com/in/en/pd/suede-triplex-unisex-sneakers/381175.html?dwvar_381175_color=01>
+{'image': 'https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/381175/01/sv02/fnd/IND/fmt/png/Suede-Triplex-Unisex-Sneakers',
+ 'pid': 'https://in.puma.com/in/en/pd/suede-triplex-unisex-sneakers/381175.html?dwvar_381175_color=01'}
+2021-09-05 08:59:54 [scrapy] DEBUG: Scraped from <200 https://in.puma.com/in/en/pd/suede-triplex-unisex-sneakers/381175.html?dwvar_381175_color=01>
+{'image': 'https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/381175/01/sv03/fnd/IND/fmt/png/Suede-Triplex-Unisex-Sneakers',
+ 'pid': 'https://in.puma.com/in/en/pd/suede-triplex-unisex-sneakers/381175.html?dwvar_381175_color=01'}
+2021-09-05 08:59:57 [scrapy] DEBUG: Scraped from <200 https://in.puma.com/in/en/pd/suede-triplex-unisex-sneakers/381175.html?dwvar_381175_color=01>
+{'image': 'https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/381175/01/sv04/fnd/IND/fmt/png/Suede-Triplex-Unisex-Sneakers',
+ 'pid': 'https://in.puma.com/in/en/pd/suede-triplex-unisex-sneakers/381175.html?dwvar_381175_color=01'}
+2021-09-05 08:59:59 [scrapy] DEBUG: Scraped from <200 https://in.puma.com/in/en/pd/suede-triplex-unisex-sneakers/381175.html?dwvar_381175_color=01>
+{'image': 'https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/381175/01/sv01/fnd/IND/fmt/png/Suede-Triplex-Unisex-Sneakers',
+ 'pid': 'https://in.puma.com/in/en/pd/suede-triplex-unisex-sneakers/381175.html?dwvar_381175_color=01'}
+2021-09-05 08:59:59 [scrapy] INFO: Closing spider (finished)
+2021-09-05 08:59:59 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 361,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 66516,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 26.142214,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 9, 5, 3, 29, 59, 233461),
+ 'httpcompression/response_bytes': 841199,
+ 'httpcompression/response_count': 1,
+ 'item_scraped_count': 8,
+ 'log_count/DEBUG': 379,
+ 'log_count/INFO': 8,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2021, 9, 5, 3, 29, 33, 91247)}
+2021-09-05 08:59:59 [scrapy] INFO: Spider closed (finished)

@@ -1,0 +1,69 @@
+2021-09-05 08:43:49 [scrapy] DEBUG: Crawled (200) <GET https://www.ajio.com/red-round-tiered-embellished-lehenga-choli-set-with-dupatta/p/461884174_navy> (referer: None)
+2021-09-05 08:43:59 [scrapy] DEBUG: Scraped from <200 https://www.ajio.com/red-round-tiered-embellished-lehenga-choli-set-with-dupatta/p/461884174_navy>
+{'image': 'https://assets.ajio.com/medias/sys_master/root/20210620/1lnH/60cfab93aeb269a9e3f603e7/-473Wx593H-461884174-navy-MODEL.jpg',
+ 'pid': 'https://www.ajio.com/red-round-tiered-embellished-lehenga-choli-set-with-dupatta/p/461884174_navy'}
+2021-09-05 08:44:02 [scrapy] DEBUG: Scraped from <200 https://www.ajio.com/red-round-tiered-embellished-lehenga-choli-set-with-dupatta/p/461884174_navy>
+{'image': 'https://assets.ajio.com/medias/sys_master/root/20210620/MgyG/60cfab93aeb269a9e3f60364/-473Wx593H-461884174-navy-MODEL2.jpg',
+ 'pid': 'https://www.ajio.com/red-round-tiered-embellished-lehenga-choli-set-with-dupatta/p/461884174_navy'}
+2021-09-05 08:44:04 [scrapy] DEBUG: Scraped from <200 https://www.ajio.com/red-round-tiered-embellished-lehenga-choli-set-with-dupatta/p/461884174_navy>
+{'image': 'https://assets.ajio.com/medias/sys_master/root/20210620/re5d/60cfab93aeb269a9e3f60365/-473Wx593H-461884174-navy-MODEL3.jpg',
+ 'pid': 'https://www.ajio.com/red-round-tiered-embellished-lehenga-choli-set-with-dupatta/p/461884174_navy'}
+2021-09-05 08:44:07 [scrapy] DEBUG: Scraped from <200 https://www.ajio.com/red-round-tiered-embellished-lehenga-choli-set-with-dupatta/p/461884174_navy>
+{'image': 'https://assets.ajio.com/medias/sys_master/root/20210620/tRI1/60cfab93aeb269a9e3f60385/-473Wx593H-461884174-navy-MODEL4.jpg',
+ 'pid': 'https://www.ajio.com/red-round-tiered-embellished-lehenga-choli-set-with-dupatta/p/461884174_navy'}
+2021-09-05 08:44:09 [scrapy] DEBUG: Scraped from <200 https://www.ajio.com/red-round-tiered-embellished-lehenga-choli-set-with-dupatta/p/461884174_navy>
+{'image': 'https://assets.ajio.com/medias/sys_master/root/20210620/CWk0/60cfab93aeb269a9e3f6035b/-473Wx593H-461884174-navy-MODEL5.jpg',
+ 'pid': 'https://www.ajio.com/red-round-tiered-embellished-lehenga-choli-set-with-dupatta/p/461884174_navy'}
+2021-09-05 08:44:11 [scrapy] DEBUG: Scraped from <200 https://www.ajio.com/red-round-tiered-embellished-lehenga-choli-set-with-dupatta/p/461884174_navy>
+{'image': 'https://assets.ajio.com/medias/sys_master/root/20210620/1lnH/60cfab93aeb269a9e3f603e7/-473Wx593H-461884174-navy-MODEL.jpg',
+ 'pid': 'https://www.ajio.com/red-round-tiered-embellished-lehenga-choli-set-with-dupatta/p/461884174_navy'}
+2021-09-05 08:44:14 [scrapy] DEBUG: Scraped from <200 https://www.ajio.com/red-round-tiered-embellished-lehenga-choli-set-with-dupatta/p/461884174_navy>
+{'image': 'https://assets.ajio.com/medias/sys_master/root/20210620/MgyG/60cfab93aeb269a9e3f60364/-473Wx593H-461884174-navy-MODEL2.jpg',
+ 'pid': 'https://www.ajio.com/red-round-tiered-embellished-lehenga-choli-set-with-dupatta/p/461884174_navy'}
+2021-09-05 08:44:16 [scrapy] DEBUG: Scraped from <200 https://www.ajio.com/red-round-tiered-embellished-lehenga-choli-set-with-dupatta/p/461884174_navy>
+{'image': 'https://assets.ajio.com/medias/sys_master/root/20210620/re5d/60cfab93aeb269a9e3f60365/-473Wx593H-461884174-navy-MODEL3.jpg',
+ 'pid': 'https://www.ajio.com/red-round-tiered-embellished-lehenga-choli-set-with-dupatta/p/461884174_navy'}
+2021-09-05 08:44:18 [scrapy] DEBUG: Scraped from <200 https://www.ajio.com/red-round-tiered-embellished-lehenga-choli-set-with-dupatta/p/461884174_navy>
+{'image': 'https://assets.ajio.com/medias/sys_master/root/20210620/tRI1/60cfab93aeb269a9e3f60385/-473Wx593H-461884174-navy-MODEL4.jpg',
+ 'pid': 'https://www.ajio.com/red-round-tiered-embellished-lehenga-choli-set-with-dupatta/p/461884174_navy'}
+2021-09-05 08:44:21 [scrapy] DEBUG: Scraped from <200 https://www.ajio.com/red-round-tiered-embellished-lehenga-choli-set-with-dupatta/p/461884174_navy>
+{'image': 'https://assets.ajio.com/medias/sys_master/root/20210620/CWk0/60cfab93aeb269a9e3f6035b/-473Wx593H-461884174-navy-MODEL5.jpg',
+ 'pid': 'https://www.ajio.com/red-round-tiered-embellished-lehenga-choli-set-with-dupatta/p/461884174_navy'}
+2021-09-05 08:44:23 [scrapy] DEBUG: Scraped from <200 https://www.ajio.com/red-round-tiered-embellished-lehenga-choli-set-with-dupatta/p/461884174_navy>
+{'image': 'https://assets.ajio.com/medias/sys_master/root/20210620/1lnH/60cfab93aeb269a9e3f603e7/-473Wx593H-461884174-navy-MODEL.jpg',
+ 'pid': 'https://www.ajio.com/red-round-tiered-embellished-lehenga-choli-set-with-dupatta/p/461884174_navy'}
+2021-09-05 08:44:25 [scrapy] DEBUG: Scraped from <200 https://www.ajio.com/red-round-tiered-embellished-lehenga-choli-set-with-dupatta/p/461884174_navy>
+{'image': 'https://assets.ajio.com/medias/sys_master/root/20210620/MgyG/60cfab93aeb269a9e3f60364/-473Wx593H-461884174-navy-MODEL2.jpg',
+ 'pid': 'https://www.ajio.com/red-round-tiered-embellished-lehenga-choli-set-with-dupatta/p/461884174_navy'}
+2021-09-05 08:44:27 [scrapy] DEBUG: Scraped from <200 https://www.ajio.com/red-round-tiered-embellished-lehenga-choli-set-with-dupatta/p/461884174_navy>
+{'image': 'https://assets.ajio.com/medias/sys_master/root/20210620/re5d/60cfab93aeb269a9e3f60365/-473Wx593H-461884174-navy-MODEL3.jpg',
+ 'pid': 'https://www.ajio.com/red-round-tiered-embellished-lehenga-choli-set-with-dupatta/p/461884174_navy'}
+2021-09-05 08:44:30 [scrapy] DEBUG: Scraped from <200 https://www.ajio.com/red-round-tiered-embellished-lehenga-choli-set-with-dupatta/p/461884174_navy>
+{'image': 'https://assets.ajio.com/medias/sys_master/root/20210620/tRI1/60cfab93aeb269a9e3f60385/-473Wx593H-461884174-navy-MODEL4.jpg',
+ 'pid': 'https://www.ajio.com/red-round-tiered-embellished-lehenga-choli-set-with-dupatta/p/461884174_navy'}
+2021-09-05 08:44:32 [scrapy] DEBUG: Scraped from <200 https://www.ajio.com/red-round-tiered-embellished-lehenga-choli-set-with-dupatta/p/461884174_navy>
+{'image': 'https://assets.ajio.com/medias/sys_master/root/20210620/CWk0/60cfab93aeb269a9e3f6035b/-473Wx593H-461884174-navy-MODEL5.jpg',
+ 'pid': 'https://www.ajio.com/red-round-tiered-embellished-lehenga-choli-set-with-dupatta/p/461884174_navy'}
+2021-09-05 08:44:34 [scrapy] INFO: Closing spider (finished)
+2021-09-05 08:44:34 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 427,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 18315,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 44.897569,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 9, 5, 3, 14, 34, 415157),
+ 'httpcompression/response_bytes': 67086,
+ 'httpcompression/response_count': 1,
+ 'item_scraped_count': 15,
+ 'log_count/DEBUG': 877,
+ 'log_count/INFO': 8,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2021, 9, 5, 3, 13, 49, 517588)}
+2021-09-05 08:44:34 [scrapy] INFO: Spider closed (finished)

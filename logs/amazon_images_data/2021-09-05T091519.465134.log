@@ -1,0 +1,44 @@
+2021-09-05 09:15:24 [scrapy] DEBUG: Redirecting (301) to <GET https://www.amazon.in/Seagate-Portable-External-Drive-STGX2000400/dp/B07CRG94G3> from <GET https://www.amazon.in/Seagate-Portable-External-Hard-Drive/dp/B07CRG94G3/ref=lp_16225007011_1_1>
+2021-09-05 09:15:27 [scrapy] DEBUG: Crawled (200) <GET https://www.amazon.in/Seagate-Portable-External-Drive-STGX2000400/dp/B07CRG94G3> (referer: None)
+2021-09-05 09:15:36 [scrapy] DEBUG: Scraped from <200 https://www.amazon.in/Seagate-Portable-External-Drive-STGX2000400/dp/B07CRG94G3>
+{'image': 'https://m.media-amazon.com/images/I/31jBba7+ySL._SS40_.jpg',
+ 'pid': 'https://www.amazon.in/Seagate-Portable-External-Drive-STGX2000400/dp/B07CRG94G3'}
+2021-09-05 09:15:38 [scrapy] DEBUG: Scraped from <200 https://www.amazon.in/Seagate-Portable-External-Drive-STGX2000400/dp/B07CRG94G3>
+{'image': 'https://m.media-amazon.com/images/I/51zeCR+2YRL._SS40_.jpg',
+ 'pid': 'https://www.amazon.in/Seagate-Portable-External-Drive-STGX2000400/dp/B07CRG94G3'}
+2021-09-05 09:15:41 [scrapy] DEBUG: Scraped from <200 https://www.amazon.in/Seagate-Portable-External-Drive-STGX2000400/dp/B07CRG94G3>
+{'image': 'https://m.media-amazon.com/images/I/61iMw9EyxLL._SS40_.jpg',
+ 'pid': 'https://www.amazon.in/Seagate-Portable-External-Drive-STGX2000400/dp/B07CRG94G3'}
+2021-09-05 09:15:43 [scrapy] DEBUG: Scraped from <200 https://www.amazon.in/Seagate-Portable-External-Drive-STGX2000400/dp/B07CRG94G3>
+{'image': 'https://m.media-amazon.com/images/I/51jkYRE3trL._SS40_.jpg',
+ 'pid': 'https://www.amazon.in/Seagate-Portable-External-Drive-STGX2000400/dp/B07CRG94G3'}
+2021-09-05 09:15:45 [scrapy] DEBUG: Scraped from <200 https://www.amazon.in/Seagate-Portable-External-Drive-STGX2000400/dp/B07CRG94G3>
+{'image': 'https://m.media-amazon.com/images/I/51+tBMvoiuL._SS40_.jpg',
+ 'pid': 'https://www.amazon.in/Seagate-Portable-External-Drive-STGX2000400/dp/B07CRG94G3'}
+2021-09-05 09:15:48 [scrapy] DEBUG: Scraped from <200 https://www.amazon.in/Seagate-Portable-External-Drive-STGX2000400/dp/B07CRG94G3>
+{'image': 'https://m.media-amazon.com/images/I/41z7tvZkxmL._SS40_.jpg',
+ 'pid': 'https://www.amazon.in/Seagate-Portable-External-Drive-STGX2000400/dp/B07CRG94G3'}
+2021-09-05 09:15:48 [scrapy] INFO: Closing spider (finished)
+2021-09-05 09:15:48 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 873,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 261201,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 1,
+ 'downloader/response_status_count/301': 1,
+ 'elapsed_time_seconds': 23.625394,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 9, 5, 3, 45, 48, 145009),
+ 'httpcompression/response_bytes': 1341499,
+ 'httpcompression/response_count': 1,
+ 'item_scraped_count': 6,
+ 'log_count/DEBUG': 263,
+ 'log_count/INFO': 8,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2021, 9, 5, 3, 45, 24, 519615)}
+2021-09-05 09:15:48 [scrapy] INFO: Spider closed (finished)

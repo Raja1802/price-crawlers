@@ -1,0 +1,79 @@
+2021-09-05 08:50:23 [scrapy] DEBUG: Crawled (200) <GET https://www.nykaa.com/wahl-argan-care-hair-dryer-black/p/494639?ptype=product> (referer: None)
+2021-09-05 08:50:25 [scrapy] DEBUG: Scraped from <200 https://www.nykaa.com/wahl-argan-care-hair-dryer-black/p/494639?ptype=product>
+{'image': 'https://images-static.nykaa.com/media/catalog/product/tr:w-50,h-50,cm-pad_resize/e/0/e0b2c838906103030123__1_.jpg',
+ 'pid': 'https://www.nykaa.com/wahl-argan-care-hair-dryer-black/p/494639?ptype=product'}
+2021-09-05 08:50:28 [scrapy] DEBUG: Scraped from <200 https://www.nykaa.com/wahl-argan-care-hair-dryer-black/p/494639?ptype=product>
+{'image': 'https://images-static.nykaa.com/media/catalog/product/tr:w-50,h-50,cm-pad_resize/e/0/e0b2c838906103030123__2_.jpg',
+ 'pid': 'https://www.nykaa.com/wahl-argan-care-hair-dryer-black/p/494639?ptype=product'}
+2021-09-05 08:50:30 [scrapy] DEBUG: Scraped from <200 https://www.nykaa.com/wahl-argan-care-hair-dryer-black/p/494639?ptype=product>
+{'image': 'https://images-static.nykaa.com/media/catalog/product/tr:w-50,h-50,cm-pad_resize/e/0/e0b2c838906103030123__3_.jpg',
+ 'pid': 'https://www.nykaa.com/wahl-argan-care-hair-dryer-black/p/494639?ptype=product'}
+2021-09-05 08:50:32 [scrapy] DEBUG: Scraped from <200 https://www.nykaa.com/wahl-argan-care-hair-dryer-black/p/494639?ptype=product>
+{'image': 'https://images-static.nykaa.com/media/catalog/product/tr:w-50,h-50,cm-pad_resize/e/0/e0b2c838906103030123__4_.jpg',
+ 'pid': 'https://www.nykaa.com/wahl-argan-care-hair-dryer-black/p/494639?ptype=product'}
+2021-09-05 08:50:35 [scrapy] DEBUG: Scraped from <200 https://www.nykaa.com/wahl-argan-care-hair-dryer-black/p/494639?ptype=product>
+{'image': 'https://images-static.nykaa.com/media/catalog/product/tr:w-50,h-50,cm-pad_resize/e/0/e0b2c838906103030123__5_.jpg',
+ 'pid': 'https://www.nykaa.com/wahl-argan-care-hair-dryer-black/p/494639?ptype=product'}
+2021-09-05 08:50:37 [scrapy] DEBUG: Scraped from <200 https://www.nykaa.com/wahl-argan-care-hair-dryer-black/p/494639?ptype=product>
+{'image': 'https://images-static.nykaa.com/media/catalog/product/tr:w-50,h-50,cm-pad_resize/e/0/e0b2c838906103030123__6_.jpg',
+ 'pid': 'https://www.nykaa.com/wahl-argan-care-hair-dryer-black/p/494639?ptype=product'}
+2021-09-05 08:50:40 [scrapy] DEBUG: Scraped from <200 https://www.nykaa.com/wahl-argan-care-hair-dryer-black/p/494639?ptype=product>
+{'image': 'https://images-static.nykaa.com/media/catalog/product/tr:w-50,h-50,cm-pad_resize/e/0/e0b2c838906103030123__7_.jpg',
+ 'pid': 'https://www.nykaa.com/wahl-argan-care-hair-dryer-black/p/494639?ptype=product'}
+2021-09-05 08:50:42 [scrapy] DEBUG: Scraped from <200 https://www.nykaa.com/wahl-argan-care-hair-dryer-black/p/494639?ptype=product>
+{'image': 'https://images-static.nykaa.com/media/catalog/product/tr:w-50,h-50,cm-pad_resize/e/0/e0b2c838906103030123__8_.jpg',
+ 'pid': 'https://www.nykaa.com/wahl-argan-care-hair-dryer-black/p/494639?ptype=product'}
+2021-09-05 08:50:42 [scrapy] ERROR: Spider error processing <GET https://www.nykaa.com/wahl-argan-care-hair-dryer-black/p/494639?ptype=product> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\core\spidermw.py", line 56, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\core\spidermw.py", line 56, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\core\spidermw.py", line 56, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\core\spidermw.py", line 56, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\graja~1\desktop\scrapy~2\scraper\venv\lib\site-packages\scrapy\core\spidermw.py", line 56, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\G RAJA\Desktop\scrapy_mongo\scraper\scraper\ajar\ajar\spiders\nykaaimages.py", line 45, in parse
+    # browser.quit()
+NameError: name 'browser' is not defined
+2021-09-05 08:50:42 [scrapy] INFO: Closing spider (finished)
+2021-09-05 08:50:42 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 283,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 41537,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 19.642065,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 9, 5, 3, 20, 42, 497524),
+ 'httpcompression/response_bytes': 143700,
+ 'httpcompression/response_count': 1,
+ 'item_scraped_count': 8,
+ 'log_count/DEBUG': 359,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 8,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/NameError': 1,
+ 'start_time': datetime.datetime(2021, 9, 5, 3, 20, 22, 855459)}
+2021-09-05 08:50:42 [scrapy] INFO: Spider closed (finished)

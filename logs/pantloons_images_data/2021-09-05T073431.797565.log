@@ -1,0 +1,39 @@
+2021-09-05 07:34:36 [scrapy] DEBUG: Crawled (200) <GET https://www.pantaloons.com/p/-black-solid-jeans-526686.html> (referer: None)
+2021-09-05 07:34:45 [scrapy] DEBUG: Scraped from <200 https://www.pantaloons.com/p/-black-solid-jeans-526686.html>
+{'image': 'https://pantaloons.imgix.net/img/app/others/img1x1.png',
+ 'pid': 'https://www.pantaloons.com/p/-black-solid-jeans-526686.html'}
+2021-09-05 07:34:47 [scrapy] DEBUG: Scraped from <200 https://www.pantaloons.com/p/-black-solid-jeans-526686.html>
+{'image': 'https://pantaloons.imgix.net/img/app/others/img1x1.png',
+ 'pid': 'https://www.pantaloons.com/p/-black-solid-jeans-526686.html'}
+2021-09-05 07:34:49 [scrapy] DEBUG: Scraped from <200 https://www.pantaloons.com/p/-black-solid-jeans-526686.html>
+{'image': 'https://pantaloons.imgix.net/img/app/others/img1x1.png',
+ 'pid': 'https://www.pantaloons.com/p/-black-solid-jeans-526686.html'}
+2021-09-05 07:34:52 [scrapy] DEBUG: Scraped from <200 https://www.pantaloons.com/p/-black-solid-jeans-526686.html>
+{'image': 'https://pantaloons.imgix.net/img/app/others/img1x1.png',
+ 'pid': 'https://www.pantaloons.com/p/-black-solid-jeans-526686.html'}
+2021-09-05 07:34:54 [scrapy] DEBUG: Scraped from <200 https://www.pantaloons.com/p/-black-solid-jeans-526686.html>
+{'image': 'https://pantaloons.imgix.net/img/app/others/img1x1.png',
+ 'pid': 'https://www.pantaloons.com/p/-black-solid-jeans-526686.html'}
+2021-09-05 07:34:56 [scrapy] INFO: Closing spider (finished)
+2021-09-05 07:34:56 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 416,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 103777,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 19.885149,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 9, 5, 2, 4, 56, 688370),
+ 'httpcompression/response_bytes': 390197,
+ 'httpcompression/response_count': 1,
+ 'item_scraped_count': 5,
+ 'log_count/DEBUG': 244,
+ 'log_count/INFO': 8,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2021, 9, 5, 2, 4, 36, 803221)}
+2021-09-05 07:34:56 [scrapy] INFO: Spider closed (finished)
