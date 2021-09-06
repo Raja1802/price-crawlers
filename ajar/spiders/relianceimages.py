@@ -42,7 +42,7 @@ class QuotesInfiniteScrollSpider(scrapy.Spider):
         )
         browser.get(response.url)
         scrapy_selector = Selector(text=browser.page_source)
-
+        sleep(1)
         for i in browser.find_elements_by_css_selector("div.slick-slide"):
             clicer = i.find_element_by_css_selector("img.imgCenter")
             # print("hwell")
