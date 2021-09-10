@@ -16,7 +16,15 @@ BOT_NAME = "ajar"
 SPIDER_MODULES = ["ajar.spiders"]
 NEWSPIDER_MODULE = "ajar.spiders"
 #
-
+# SCHEDULER = "scrapy_redis.scheduler.Scheduler"
+# DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"
+# STATS_CLASS = "scrapy_redis.stats.RedisStatsCollector"
+# SCHEDULER_PERSIST = True
+# # REDIS_URL = 'redis-13558.c124.us-central1-1.gce.cloud.redislabs.com:13558'
+# REDIS_HOST = 'redis-13558.c124.us-central1-1.gce.cloud.redislabs.com'
+# REDIS_PORT = 13558
+# REDIS_PARAMS  = {}
+# REDIS_PARAMS['password'] = 'GFYEK8nzMvTizpyfxZ0Dm7Mn2gL3jSa2'
 #
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 # USER_AGENT = 'ajar (+http://www.yourdomain.com)'
@@ -25,7 +33,7 @@ NEWSPIDER_MODULE = "ajar.spiders"
 ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
-CONCURRENT_REQUESTS = 5
+CONCURRENT_REQUESTS = 30
 
 # Configure a delay for requests for the same website (default: 0)
 # See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay
@@ -181,6 +189,7 @@ USER_AGENTS = [
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
+    # 'scrapy_redis.pipelines.RedisPipeline': 300,
     "ajar.pipelines.AjarPipeline": 300,
 }
 
@@ -215,9 +224,6 @@ ITEM_PIPELINES = {
 # ]  # '--headless' if using chrome instead of firefox
 # SCHEDULER_DEBUG = True
 LOG_LEVEL = 'ERROR'
-
-
-
 
 
 

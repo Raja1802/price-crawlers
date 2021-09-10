@@ -175,6 +175,11 @@ class LinkExtracters(scrapy.Item):
     url = scrapy.Field()
     website = scrapy.Field()
 
+class UrlExtracters(scrapy.Item):
+    url = scrapy.Field()
+    canonical = scrapy.Field()
+    website = scrapy.Field()
+
 class SpecsExtractor(scrapy.Item):
     pid = scrapy.Field()
     specKey = scrapy.Field()
