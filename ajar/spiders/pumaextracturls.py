@@ -9,7 +9,7 @@ import os
 from scrapy.linkextractors import LinkExtractor as sle
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
-
+#
 class QuotesInfiniteScrollSpider(CrawlSpider):
     name = "pumain_url"
     rotate_user_agent = True
