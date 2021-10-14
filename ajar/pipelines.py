@@ -57,6 +57,14 @@ class AjarPipeline:
             else:
                 print("image Exist")
             return item
+        elif "product_id" in item:
+            dup_check = collect_price.find({'product_id':item['product_id']}).count()
+            if dup_check == 0 :     
+                collect_price.insert(dict(item))
+                print ("product Added!")
+            else:
+                print("product Exist")
+            return item
         elif "url" in item:
             dup_check = collect_price.find({'url':item['url']}).count()
             if dup_check == 0 :     
