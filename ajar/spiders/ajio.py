@@ -30,13 +30,13 @@ class QuotesInfiniteScrollSpider(CrawlSpider):
     name = "ajio"
     rotate_user_agent = True 
     allowed_domains = ["www.ajio.com"]
-    start_urls = ["https://www.ajio.com/"]
-    rules = (Rule(sle(allow="",), callback="parse_result", follow=True),)
+    start_urls = []
+    #rules = (Rule(sle(allow="",), callback="parse_result", follow=True),)
     # for url in start_urls:
     #     scrapy.Request(url=url, callback=parse_result)
     # sitemap_urls = ["https://www.ajio.com/medias/sys_master/sitemap/sitemap/Product-en-INR-0/Product-en-INR-0.xml"]
     # parsing results with below function
-    def parse_result(self, response):
+    def parse(self, response):
         amazon = []
         amazon = AmazonUs()
         userAgent = ua.random

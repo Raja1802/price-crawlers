@@ -12,11 +12,11 @@ class QuotesSpider(CrawlSpider):
     name = 'amazonin'
     rotate_user_agent = True
     allowed_domains = ['www.amazon.in']
-    start_urls = ['https://www.amazon.in/']
+    start_urls = []
 
-    rules = (Rule(sle(allow='dp', deny=('product-reviews','/ap/', '/s/', '/gp/', '/hz/', '/b/','/mn/', '/slp/', '/amazonprime',)), callback='parse_images', follow=True), )
+    # rules = (Rule(sle(allow='dp', deny=('product-reviews','/ap/', '/s/', '/gp/', '/hz/', '/b/','/mn/', '/slp/', '/amazonprime',)), callback='parse_images', follow=True), )
 
-    def parse_images(self, response):
+    def parse(self, response):
         amazon = []
         amazon = AmazonUs()
 

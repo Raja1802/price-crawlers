@@ -12,11 +12,11 @@ class QuotesSpider(CrawlSpider):
     name = "pumain"
     rotate_user_agent = True
     allowed_domains = ["in.puma.com"]
-    start_urls = ["https://in.puma.com/"]
+    start_urls = []
 
-    rules = (Rule(sle(allow="",), callback="parse_images", follow=True),)
+    #rules = (Rule(sle(allow="",), callback="parse_images", follow=True),)
 
-    def parse_images(self, response):
+    def parse(self, response):
         amazon = []
         amazon = AmazonUs()
         amazon["product_id"] = response.css(

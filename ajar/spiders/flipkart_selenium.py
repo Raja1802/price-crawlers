@@ -23,10 +23,10 @@ class QuotesInfiniteScrollSpider(CrawlSpider):
     name = "flipkart"
     rotate_user_agent = True
     allowed_domains = ["www.flipkart.com"]
-    start_urls = ["https://www.flipkart.com/"]
-    rules = (Rule(sle(allow=( "shirt", "shoes","mobile","cycle","women","men","/p/"), deny=("product-reviews")), callback="parse_result", follow=True),)
+    start_urls = []
+    #rules = (Rule(sle(allow=( "shirt", "shoes","mobile","cycle","women","men","/p/"), deny=("product-reviews")), callback="parse_result", follow=True),)
     # parsing results with below function
-    def parse_result(self, response):
+    def parse(self, response):
         amazon = []
         amazon = AmazonUs()
         browser = webdriver.Chrome(

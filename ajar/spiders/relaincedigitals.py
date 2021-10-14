@@ -26,10 +26,10 @@ class QuotesInfiniteScrollSpider(CrawlSpider):
     name = "rlcdig"
     rotate_user_agent = True
     allowed_domains = ["www.reliancedigital.in"]
-    start_urls = ["https://www.reliancedigital.in/"]
-    rules = (Rule(sle(allow="/p/",deny=("/c/", )), callback="parse_result", follow=True),)
+    start_urls = []
+    #rules = (Rule(sle(allow="/p/",deny=("/c/", )), callback="parse_result", follow=True),)
     # parsing results with below function
-    def parse_result(self, response):
+    def parse(self, response):
         amazon = []
         amazon = AmazonUs()
         userAgent = ua.random

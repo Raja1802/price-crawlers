@@ -1,4 +1,5 @@
 web: scrapyd
+worker00: scrapy crawl nikeus
 worker01: scrapy crawl ajio_urls
 worker02: scrapy crawl pumain_url
 worker03: scrapy crawl rlcdig_url

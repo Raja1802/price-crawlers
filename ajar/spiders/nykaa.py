@@ -12,11 +12,11 @@ class QuotesSpider(CrawlSpider):
     name = 'nykaa'
     rotate_user_agent = True
     allowed_domains = ['www.nykaa.com']
-    start_urls = ['https://www.nykaa.com/']
+    start_urls = []
 
-    rules = (Rule(sle(allow='p', deny=("/c/")), callback='parse_images', follow=True), )
+    #rules = (Rule(sle(allow='p', deny=("/c/")), callback='parse_images', follow=True), )
 
-    def parse_images(self, response):
+    def parse(self, response):
         amazon = []
         amazon = AmazonUs()
 

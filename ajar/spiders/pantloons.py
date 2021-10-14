@@ -22,13 +22,13 @@ chrome_options.add_argument("--disable-plugins-discovery")
 chrome_options.binary_location = GOOGLE_CHROME_PATH
 
 
-class QuotesInfiniteScrollSpider(SitemapSpider):
+class QuotesInfiniteScrollSpider(CrawlSpider):
     name = "pantlon"
     rotate_user_agent = True
     allowed_domains = ["www.pantaloons.com"]
-    # start_urls = ["https://www.pantaloons.com/"]
+    start_urls = []
     # rules = (Rule(sle(allow="/p/", deny=("/c/", )), callback="parse_result", follow=True),)
-    sitemap_urls = ["https://www.pantaloons.com/product-sitemap.xml"]
+    #sitemap_urls = ["https://www.pantaloons.com/product-sitemap.xml"]
     # parsing results with below function
     def parse(self, response):
         amazon = []
