@@ -131,5 +131,4 @@ class QuotesInfiniteScrollSpider(CrawlSpider):
         return amazon
 
 
-# git push change usage comments
-# push 1
+#
