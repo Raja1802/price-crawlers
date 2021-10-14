@@ -1,4 +1,4 @@
-web: scrapyd
+web: scrapyrt -p $PORT -i 0.0.0.0 
 worker00: scrapy crawl nikeus
 worker01: scrapy crawl ajio_urls
 worker02: scrapy crawl pumain_url
